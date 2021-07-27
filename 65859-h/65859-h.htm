@@ -1,0 +1,2455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Architecture of the North Louisiana River Parishes, Volume 1: Ouachita Parish, by Louisiana Tech University Department of Architecture&mdash;a Project Gutenberg eBook</title>
+<meta name="author" content="Louisiana Tech University Department of Architecture" />
+<meta name="pss.pubdate" content="1988" />
+<link rel="coverpage" href="images/cover.jpg" />
+<link rel="spine" href="images/spine.jpg" />
+<link rel="schema.DC" href="http://dublincore.org/documents/1998/09/dces/" />
+<meta name="DC.Title" content="The Architecture of the North Louisiana River Parishes, Volume 1: Ouachita Parish" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Created" content="1988" />
+<meta name="DC.Creator" content="Louisiana Tech University Department of Architecture" />
+<style type="text/css">
+/* == GLOBAL MARKUP == */
+body, table.twocol tr td  { margin-left:2em; margin-right:2em; }   /* BODY */
+.box     { border-style:double; margin-bottom:2em; max-width:30em; margin-right:auto; margin-left:auto; margin-top:2em; clear:both; }
+.box div.box  { border-style:solid; margin-right:auto; margin-left:auto; max-width:26em; }
+.box p   { margin-right:1em; margin-left:1em; }
+.box dl  { margin-right:1em; margin-left:1em; }
+h1, h2, h5, h6, .titlepg p { text-align:center; clear:both; text-indent:0; }   /* HEADINGS */
+h2                { margin-top:2em; margin-bottom:1em;
+                    font-size:125%; text-align:left; font-family:sans-serif; font-weight:normal; }
+h2 .small         { font-size:100%; }
+h2+h2             { margin-top:3.5em; }
+h1                { margin-top:3em; }
+h1 .likep         { font-weight:normal; font-size:50%; }
+div.box h1        { margin-top:1em; margin-left:.5em; margin-right:.5em; }
+h3                { margin-top:2em; text-align:left; font-size: 110%; clear:both; }
+h4, h5            { font-size:100%; text-align:right; clear:right; }
+h6                { font-size:100%; }
+h6.var            { font-size:80%; font-style:normal; }
+.titlepg          { margin-left:auto; margin-right:auto; border-style:double; clear:both; }
+span.chaptertitle { font-style:normal; display:block; text-align:center; font-size:150%; text-indent:0; }
+.tblttl           { text-align:center; text-indent:0;}
+.tblsttl          { text-align:center; font-variant:small-caps; text-indent:0; }
+
+pre sub.ms { width:4em; letter-spacing:1em; }
+pre        { margin-top:1em; margin-bottom:1em; }
+table.fmla { text-align:center; margin-top:0em; margin-bottom:0em; margin-left:0em; margin-right:0em; }
+table.inline, table.symbol { display: inline-table; vertical-align: middle; }
+td.cola           { text-align:left; vertical-align:100%; }
+td.colb           { text-align:justify; }
+
+p, blockquote, div.p, div.bq { text-align:justify; }                              /* PARAGRAPHS */
+div.p, div.bq   { margin-top:1em; margin-bottom:1em; }
+blockquote, .bq { margin-left:1em; margin-right:0em; }
+.verse    { font-size:100%; }
+p.indent  {text-indent:2em; text-align:left; }
+p.tb, p.tbcenter, verse.tb, blockquote.tb      { margin-top:2em; }
+
+span.pb, div.pb, dt.pb, p.pb                   /* PAGE BREAKS */
+{ text-align:right; float:right; margin-right:0em; clear:right; }
+div.pb { display:inline; }
+.pb, dt.pb, dl.toc dt.pb, dl.tocl dt.pb, dl.undent dt.pb, dl.index dt.pb    { text-align:right; float:right; margin-left: 1.5em;
+         margin-top:.5em; margin-bottom:.5em; display:inline; text-indent:0;
+         font-size:80%; font-style:normal; font-weight:bold;
+         color:gray; border:1px solid gray;padding:1px 3px; }
+div.index .pb  { display:block; }
+.bq  div.pb, .bq span.pb  { font-size:90%; margin-right:2em; }
+
+div.img, body a img  {text-align:center; margin-left:auto; margin-right:auto; margin-top:2em; margin-bottom:2em; clear:right; }
+img         { max-width:100%; height:auto; }
+
+sup, a.fn { font-size:75%; vertical-align:100%; line-height:50%; font-weight:normal; }
+h3   a.fn { font-size:65%; }
+a.fn      { font-style:normal; }
+sub { font-size:75%; }
+.center, .tbcenter       { text-align:center; clear:both; text-indent:0; }                  /* TEXTUAL MARKUP */
+span.center              { display:block; }
+table.center { clear:both; margin-right:auto; margin-left:auto; }
+table.center tr td.l, table.center tr th.l  {text-align:left; margin-left:0em; }
+table.center tr td.j  {text-align:justify; }
+table.center tr td.ltab { text-align:left; width:1.5em; }
+table.center tr td.t  {text-align:left; text-indent:1em; }
+table.center tr td.t2 {text-align:left; text-indent:2em; }
+table.center tr td.r, table.center tr th.r  {text-align:right; }
+table.center tr th.rx  { width:4.5em; text-align:right; }
+table.center tr th    {vertical-align:bottom; }
+table.center tr td    {vertical-align:top; }
+table.inline, table.symbol { display: inline-table; vertical-align: middle; }
+
+p           { clear:left; }
+.small, .lsmall      { font-size:90%; }
+.smaller    { font-size:80%; }
+.smallest   { font-size:67%; }
+.larger     { font-size:150%; }
+.large      { font-size:125%; }
+.xlarge     { font-size:150%; }
+.xxlarge    { font-size:200%; }
+.gs         { letter-spacing:1em; }
+.gs3        { letter-spacing:2em; }
+.gslarge    { letter-spacing:.3em; font-size:110%; }
+.sc         { font-variant:small-caps; font-style:normal; }
+.cur        { font-family:cursive; }
+.unbold     { font-weight:normal; }
+.xo         { position:relative; left:-.3em; }
+.over       { text-decoration: overline; display:inline; }
+hr          { width:20%; margin-left:40%; }
+hr.dwide    { margin-top:0; margin-bottom:0; width:90%; margin-left:5%; clear:right; }
+hr.double   { margin-top:0; margin-bottom:0; width:100%; margin-left:0; margin-right:0; }
+hr.f        { margin-top:0; margin-bottom:0; width:100%; margin-left:0; }
+.jl         { text-align:left; }
+.jr, .jri   { text-align:right; min-width:2em; display:inline-block; float:right; }
+.pcap .jri  { font-size:80%; }
+.jr1        { text-align:right; margin-right:2em; }
+h1 .jr      { margin-right:.5em; }
+.ind1       { text-align:left;  margin-left:2em; }
+.u          { text-decoration:underline; }
+.hst        { margin-left:2em; }
+.hst2       { margin-left:4em; }
+.rubric     { color:red; }
+.blue       { color:blue;   background-color:white; }
+.purple     { color:purple; background-color:white; }
+.green      { color:green;  background-color:white; }
+.yellow     { color:yellow; background-color:white; }
+.orange     { color:#ffa500; background-color:white; }
+.brown      { color:brown; background-color:white; }
+.white      { color:white; background-color:black; margin-left:1em; margin-right:1em; max-width:28em; }
+.cnwhite    { color:white; background-color:black; min-width:2em; display:inline-block;
+              text-align:center; font-weight:bold; font-family:sans-serif; }
+.cwhite     { color:white; background-color:black; text-align:center; font-weight:bold;
+              font-family:sans-serif; }
+ul  li      { text-align:justify; }
+u.dbl       { text-decoration:underline; }
+.ss         { font-family:sans-serif; font-weight:bold; }
+.ssn        { font-family:sans-serif; font-weight:normal; }
+p.revint    { margin-left:2em; text-indent:-2em; }
+.box p.revint  { margin-left:3em; }
+p.revint2   { margin-left:5em; text-indent:-3em; }
+p.revint2 .cn { min-width:2.5em; text-indent:0; text-align:left; display:inline-block; margin-right:.5em; }
+i .f        { font-style:normal; }
+.b          { font-weight:bold; }
+.i          { font-style:italic; }
+.f          { font-style:italic; font-weight:bold; }
+
+dd.t           { text-align:left; margin-left: 5.5em; }
+dl.toc         { clear:both; margin-top:1em; }                    /* CONTENTS (.TOC) */
+dl.toc  dt.center   { text-align:center; clear:both; margin-top:3em; margin-bottom:1em; text-indent:0;}
+.toc  dt      { text-align:right; clear:both; }
+.toc  dt.just { text-align:justify; margin-left:2em; margin-right:2em; }
+.toc  dd      { text-align:right; clear:both; }
+.toc  dd.ddt, .toc dd.t  { text-align:right; clear:both; margin-left:4em; }
+.toc  dd.ddt2,.toc dd.t2 { text-align:right; clear:both; margin-left:5em; }
+.toc  dd.ddt3 { text-align:right; clear:both; margin-left:6em; }
+.toc  dd.ddt4 { text-align:right; clear:both; margin-left:7em; }
+.toc  dd.ddt5 { text-align:right; clear:both; margin-left:8em; }
+.toc  dd.note { text-align:justify; clear:both; margin-left:5em; text-indent:-1em; margin-right:3em; }
+.toc  dt .xxxtest {width:17em; display:block; position:relative; left:4em; }
+.toc  dt  a,
+.toc  dd  a,
+.toc dt span.left,
+.toc dt span.lsmall,
+.toc dd span.left { text-align:left; clear:right; float:left; }
+.toc  dt  a  span.cn { width:4em; text-align:right; margin-right:.7em;  float:left; }
+.toc  dt.sc   { text-align:right;  clear:both; }
+.toc  dt.scl  { text-align:left;   clear:both; font-variant:small-caps; }
+.toc  dt.sct  { text-align:right;  clear:both; font-variant:small-caps; margin-left:1em; }
+.toc  dt .jl, .toc dd .jl   { text-align:left;  float:left;  clear:both; font-variant:normal; }
+.toc  dt.scc  { text-align:center; clear:both; font-variant:small-caps; text-indent:0; }
+.toc  dt span.lj, span.lj { text-align:left; display:block; float:left; }
+.toc  dd.center { text-align:center; text-indent:0; }
+dd.tocsummary {text-align:justify; margin-right:2em; margin-left:2em; }
+dd.center .sc  {display:block; text-align:center; text-indent:0; }
+/* BOX CELL */
+td.top { border-top:1px    solid; width:.5em; height:.8em; }
+td.bot { border-bottom:1px solid; width:.5em; height:.8em; }
+td.rb  { border:1px solid; border-left:none;  width:.5em; height:.8em;  }
+td.lb  { border:1px solid; border-right:none; width:.5em; height:.8em;  }
+td span.cellt   { text-indent:1em; }
+td span.cellt2  { text-indent:2em; }
+td span.cellt3  { text-indent:3em; }
+td span.cellt4  { text-indent:4em; }
+
+/* INDEX (.INDEX) */
+dl.index   { clear:both; }
+.index dt  { margin-left:2em; text-indent:-2em; text-align:left; }
+.index dd  { margin-left:4em; text-indent:-2em; text-align:left; }
+.index dd.t  { margin-left:6em; text-indent:-2em; text-align:left; }
+.index dt.center {text-align:center; text-indent:0; }
+
+  dl.indexlr     { clear:both; margin-left:auto; margin-right:auto;
+  max-width:20em; text-align:right; }
+  dl.indexlr dt  { clear:both; text-align:left; }
+  dl.indexlr dt.jl  { text-align:right; }
+  dl.indexlr dd  { clear:both; }
+  dl.indexlr a   { float:right; text-align:right; }
+  dl.indexlr dd span, dl.indexlr dt.jl span { text-align:left; display:block; float:left; }
+  dl.indexlr dt.center {text-align:center; text-indent:0; }
+
+.ab, .ab1, .ab2 {
+font-weight:bold; text-decoration:none;
+border-style:solid; border-color:gray; border-width:1px;
+margin-right:0px; margin-top:5px; display:inline-block; text-align:center; text-indent:0; }
+.ab { width:1em; }
+.ab2 { width:1.5em; }
+a.gloss { background-color:#f2f2f2; border-bottom-style:dotted; text-decoration:none; border-color:#c0c0c0; color:inherit; }
+                                                           /* FOOTNOTE BLOCKS */
+div.notes p  { margin-left:1em; text-indent:-1em; text-align:justify; }
+
+dl.undent dd    { margin-left:3em; text-indent:-2em; text-align:justify; }
+dl.undent dt    { margin-left:2em; text-indent:-2em; text-align:justify; clear:both; }
+dl.undent dd.t  { margin-left:4em; text-indent:-2em; text-align:justify; }
+dl.undent dd.t2 { margin-left:5em; text-indent:-2em; text-align:justify; }
+                                                           /* POETRY LINE NUMBER */
+.lnum   { text-align:right; float:right; margin-left:.5em; display:inline; }
+
+.hymn     { text-align:left; }                                  /*  HYMN AND VERSE: HTML  */
+.verse    { text-align:left; margin-top:1em; margin-bottom:1em; margin-left:0em; }
+.versetb  { text-align:left; margin-top:2em; margin-bottom:1em; margin-left:0em; }
+.originc  { text-align:center; text-indent:0; }
+.subttl   { text-align:center; font-size:80%; text-indent:0; }
+.srcttl   { text-align:center; font-size:80%; text-indent:0; font-weight:bold; }
+p.lc      { text-indent:0; text-align:center; margin-top:0; margin-bottom:0; }
+p.t0, p.l { margin-left:4em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.lb                 { margin-left:4em;  text-indent:-3em; margin-top:2em; margin-bottom:0; text-align:left; }
+p.tw, div.tw, .tw    { margin-left:1em;  text-indent:-1em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t,  div.t,  .t     { margin-left:5em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t2,  div.t2,  .t2  { margin-left:6em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t3,  div.t3,  .t3  { margin-left:7em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t4,  div.t4,  .t4  { margin-left:8em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t5,  div.t5,  .t5  { margin-left:9em;  text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t6,  div.t6,  .t6  { margin-left:10em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t7,  div.t7,  .t7  { margin-left:11em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t8,  div.t8,  .t8  { margin-left:12em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t9,  div.t9,  .t9  { margin-left:13em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t10, div.t10,.t10  { margin-left:14em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t11, div.t11,.t11  { margin-left:15em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t12, div.t12,.t12  { margin-left:16em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t13, div.t13,.t13  { margin-left:17em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t14, div.t14,.t14  { margin-left:18em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.t15, div.t15,.t15  { margin-left:19em; text-indent:-3em; margin-top:0; margin-bottom:0; text-align:left; }
+p.lr, div.lr, span.lr { display:block; margin-left:0em; margin-right:1em; margin-top:0; margin-bottom:0; text-align:right; }
+dt.lr                { width:100%; margin-left:0em; margin-right:0em; margin-top:0; margin-bottom:0; margin-top:1em; text-align:right; }
+dl dt.lr a           { text-align:left; clear:left; float:left; }
+
+.fnblock   { margin-top:2em; margin-bottom:2em; }
+.fndef, p.fn     { text-align:justify; margin-top:1.5em; margin-left:1.5em; text-indent:-1.5em; }
+.fndef p.fncont, .fndef dl { margin-left:0em; text-indent:0em; }
+.fnblock div.fncont { margin-left:1.5em; text-indent:0em; margin-top:1em; text-align:justify; }
+.fnblock dl  { margin-top:0; margin-left:4em; text-indent:-2em; }
+.fnblock dt  { text-align:justify; }
+dl.catalog dd { font-style:italic; }
+dl.catalog dt { margin-top:1em; }
+.author { text-align:right; margin-top:0em; margin-bottom:0em; display:block; }
+
+dl.biblio  dt        { margin-top:.6em; margin-left:2em; text-indent:-2em; text-align:justify; clear:both; }
+dl.biblio  dt  div   { display:block; float:left; margin-left:-6em; width:6em; clear:both; }
+dl.biblio  dt.center { margin-left:0em; text-align:center; text-indent:0; }
+dl.biblio  dd        { margin-top:.3em; margin-left:3em; text-align:justify; font-size:90%; }
+p.biblio             { margin-left:2em; text-indent:-2em; }
+.clear     { clear:both; }
+p.book     { margin-left:2em; text-indent:-2em; }
+p.review   { margin-left:2em; text-indent:-2em; font-size:80%; }
+p.pcap     { margin-left:0em; text-indent:0; text-align:center; margin-top:0; font-size:110%; }
+p.pcapc    { margin-left:4.7em; text-indent:0em; text-align:justify; }
+span.attr  { font-size:80%; font-family:sans-serif; }
+span.pn    { display:inline-block; width:4.7em; text-align:left; margin-left:0; text-indent:0; }
+</style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of The Architecture of the North Louisiana River Parishes, Volume I: Ouachita Parish, by F. Lestar Martin</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: The Architecture of the North Louisiana River Parishes, Volume I: Ouachita Parish</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Editor: F. Lestar Martin</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: July 17, 2021 [eBook #65859]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: Stephen Hutcheson and the Online Distributed Proofreading Team at https://www.pgdp.net </p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK THE ARCHITECTURE OF THE NORTH LOUISIANA RIVER PARISHES, VOLUME I: OUACHITA PARISH ***</div>
+<div id="cover" class="img">
+<img id="coverpage" src="images/cover.jpg" alt="The Architecture of the North Louisiana River Parishes, Volume 1: Ouachita Parish" width="1000" height="1329" />
+</div>
+<div class="box">
+<h1><span class="small ssn">THE ARCHITECTURE OF THE NORTH LOUISIANA RIVER PARISHES</span></h1>
+<p class="tbcenter"><span class="small ssn">VOLUME I
+<br />OUACHITA PARISH</span></p>
+<div class="img">
+<img src="images/p01.jpg" id="ncfig1" alt="Map showing location of Ouachita Parish" width="600" height="516" />
+</div>
+<p class="center"><span class="ssn">Dedicated To The Memory Of
+<br />WILLIAM KING STUBBS
+<br />(1910-1986)
+<br />Who practiced Architecture in Ouachita
+<br />Parish for over 50 years</span></p>
+</div>
+<div class="pb" id="Page_2">2</div>
+<h2 id="c1"><span class="small">ACKNOWLEDGEMENTS...</span></h2>
+<p class="center"><span class="large">LOUISIANA TECH UNIVERSITY
+<br />SCHOOL OF ART AND ARCHITECTURE</span></p>
+<p class="center"><span class="large">STUDENTS</span></p>
+<div class="verse">
+<p class="t0">Peter Aamodt</p>
+<p class="t0">Lance Ballard</p>
+<p class="t0">Andrea Beaver</p>
+<p class="t0">George Bendeck</p>
+<p class="t0">Paul Bratton</p>
+<p class="t0">Jeff Brown</p>
+<p class="t0">Steve Butler</p>
+<p class="t0">Tom Clark</p>
+<p class="t0">Darryl Cockerham</p>
+<p class="t0">Steve Dixon</p>
+<p class="t0">Jim Funderburk</p>
+<p class="t0">Charles Gaushell</p>
+<p class="t0">Scott Gay</p>
+<p class="t0">Amy Grafton</p>
+<p class="t0">John Greer</p>
+<p class="t0">Harmon Haley</p>
+<p class="t0">Juan Hidalgo</p>
+<p class="t0">Billy Mack Hogue</p>
+<p class="t0">Donna Hammons</p>
+<p class="t0">Rico Harris</p>
+<p class="t0">Teresa Harris</p>
+<p class="t0">Johnny Hembree</p>
+<p class="t0">Teresa Henderson</p>
+<p class="t0">Keith Matthews</p>
+<p class="t0">Brian McGuire</p>
+<p class="t0">Philip Morse</p>
+<p class="t0">Roberto Mossi</p>
+<p class="t0">Cheong Muikit</p>
+<p class="t0">Laura Netto</p>
+<p class="t0">Jn Obasi</p>
+<p class="t0">David Peterson</p>
+<p class="t0">Wayne Renaud</p>
+<p class="t0">Terry Roye</p>
+<p class="t0">Ken Smith</p>
+<p class="t0">Lloyd Smith</p>
+<p class="t0">Shawn Sprinkel</p>
+<p class="t0">Alexis Torres</p>
+<p class="t0">Brian Veal</p>
+<p class="t0">Ellen Wilson</p>
+</div>
+<p class="center"><span class="large">FACULTY</span></p>
+<p class="center">F. Lestar Martin, Professor, Editor
+<br />Peter Schneider, Head, Department of Architecture
+<br />Dr. Joseph Strother, Director, School of Art and Architecture</p>
+<p class="center"><span class="large">Partial funding for publication was provided by:</span></p>
+<p class="center">Central Bank of Monroe&mdash;West Monroe&mdash;Ruston
+<br />Convention and Visitors Bureau of Ouachita Parish
+<br />Downtown Development Authority of Monroe</p>
+<p>This book was also has been financed (in part) with Federal funds from the National Park Service, Department
+of the Interior, administrated through the Louisiana Division of Historic Preservation, Office of Cultural
+Development, Department of Culture, Recreation and Tourism. The contents and opinions do not necessarily
+reflect the views or policies of the Department of the Interior.</p>
+<p>This program receives Federal financial assistance for identification and protection of historic properties.
+Under Title VI of the Civil Rights Act of 1964 and Section 504 of the Rehabilitation Act of 1973, the U.S.
+Department of the Interior prohibits discrimination on the basis of race, color, national origin, or handicap in
+its federally assisted programs.</p>
+<p class="tbcenter"><b>LOUISIANA TECH UNIVERSITY
+<br />Ruston
+<br />1988</b></p>
+<div class="pb" id="Page_3">3</div>
+<h2 id="c2"><span class="small">INTRODUCTION...</span></h2>
+<p>A most useful tool for understanding the culture
+of a region is the study of its architecture. Buildings
+in which people live, work, learn, and worship
+reflect their tastes, economics status, and aspirations.
+And it is through research of extant architecture
+of an area that knowledge of past culture is
+ascertained.</p>
+<p>The Louisiana Tech University Department of
+Architecture has received grants from the State
+Division of Historic Preservation and the Division
+of the Arts to conduct field surveys of various
+parishes in North Louisiana. The purpose of the
+surveys has been to ascertain the types, location
+and quality of buildings 50 years or more in age.
+The architecture students toured the highways and
+back roads and photographed houses, outbuildings,
+churches, schools and commercial buildings. They
+interviewed occupants and area historians in search
+of information concerning original builder/owners.
+Each building was then documented, and the
+compilation of documentation was cataloged by the
+Louisiana Division of Historic Preservation in
+Baton Rouge.</p>
+<p>Each student was required to prepare eight pen
+or pencil sketches of buildings of individual choice.
+The original drawings, of which there are now over
+1300, were placed in the William King Stubbs
+Architectural Archives, the permanent collection of
+North Louisiana architectural drawings at Louisiana
+Tech University in Ruston.</p>
+<p>The Ouachita Parish publication is the initial
+volume of a series entitled &ldquo;The Architecture of the
+North Louisiana River Parishes.&rdquo; The Ouachita
+River divides the parish into two distinct regions,
+the western portion being hilly country with the
+eastern portion being flat river delta terrain.</p>
+<p>Thus, a unique opportunity exists to study in one
+parish various lifestyles and cultures as reflected in
+historic architecture. Not only is there the rural
+architecture of the western hills which contrast with
+the rural architecture of the delta lands, but these
+elements may be examined in relation to the urban
+architecture of Monroe and West Monroe&mdash;The
+Twin Cities on the Ouachita.</p>
+<p>Following is the history of the settlement of the
+parish and descriptions of the areas west of the
+Ouachita, east of the Ouachita, and the urban
+fabric of the Twin Cities. A <a href="#c32">catalog</a> of extant buildings
+according to plan type and characteristic details
+concludes the booklet.</p>
+<p>So, join us now for a tour of the architecture of
+Ouachita Parish.</p>
+<div class="img" id="fig1">
+<img src="images/p02.jpg" alt="" width="500" height="757" />
+<p class="pcap"><i>Fig. 1. Rear view of Cadeville Masonic Lodge,
+west of the Ouachita.</i></p>
+</div>
+<div class="img" id="fig2">
+<img src="images/p02a.jpg" alt="" width="500" height="366" />
+<p class="pcap"><i>Fig. 2. A rural bungalow, east of the Ouachita.</i></p>
+</div>
+<div class="img" id="fig3">
+<img src="images/p02c.jpg" alt="" width="500" height="308" />
+<p class="pcap"><i>Fig. 3. In the old city cemetery, Monroe.</i></p>
+</div>
+<div class="pb" id="Page_4">4</div>
+<h2 id="c3"><span class="small">THE SETTLEMENT AND DEVELOPMENT OF OUACHITA PARISH....</span></h2>
+<div class="img" id="imgx1">
+<img src="images/p03.jpg" alt="" width="1000" height="739" />
+<p class="pcap"><i>Map of Monroe and West Monroe, 1895</i>.</p>
+</div>
+<h3 id="c4">18th AND 19TH CENTURY SETTLEMENT</h3>
+<p>The area now identified as Ouachita Parish had
+been occupied by aborigines since pre-historic
+times. Early European explorers included DeSoto
+(1542), La Salle (1682), and Bienville (1703). But it
+remained for Don Juan Filhoil with a commission
+from the Spanish governor to establish the first
+permanent settlement on the banks of the Ouachita.
+When Filhoil arrived in 1783, he named the site
+for the outpost Prairie des Canots for the Indian
+and trapper canoes gathered there. The military
+post was later named Ft. Miro in honor of the
+Spanish governor of Louisiana.</p>
+<p>A colonization scheme formulated by the Spanish
+government enticed the Marquis de Maison
+Rouge to establish a settlement further north near
+the conflux of the Ouachita River and Bayou
+Bartholomew, the site of the present town of Sterlington.
+But this settlement lost its position as a
+rival for the seat of parish government after Filhoil
+laid out a plot in 1811 for a town on his plantation
+adjacent to Ft. Miro.</p>
+<p>An exciting event occurred at the townsite in
+May, 1819, one which was to have a two-fold effect
+on the 400 inhabitants of Ft. Miro. The event was
+the docking of the <i>James Monroe</i>, the first steamboat
+to ply the Ouachita to this northerly point.</p>
+<p>The ensuing excitement effected a village name
+change to &ldquo;Monroe.&rdquo; And for nearly a century the
+Ouachita River and steam powered boats combined
+to form a great highway of commerce and
+transportation for the region.</p>
+<p>Overland transportation systems developed
+throughout the territory during the 1800&rsquo;s. The
+earlier Indian trails often became bridle paths. In
+1839 a road was cut through from Monroe to
+Vicksburg, but it was passable only in dry weather.
+Stage coach service was initiated in 1849. During
+this era a road was established westward through
+the hills beyond the river; another went northward
+toward Arkansas. These westerly roads later
+became wagon roads bringing caravans of wagons
+from Jackson and Claiborne Parishes to river trade
+centers such as the former town of Trenton, two
+miles north of the present town of West Monroe.
+<span class="pb" id="Page_5">5</span>
+But it would be the advent of the Vicksburg to
+Shreveport railroad in the 1880&rsquo;s which would
+provide the communication link between the east
+and west portions of the Ouachita Parish. In 1853
+the state legislature granted the first charter for the
+construction of the Vicksburg, Texas, and the Pacific
+Railroad through North Louisiana. The first
+passenger service from Vicksburg to Monroe was
+in 1860. The tracks were destroyed by Union
+forces in the Civil War but were reconstructed and
+replaced in service by 1870. In 1882 the railroad
+bridge spanning the Ouachita was opened. It contained
+wood planking for vehicular and pedestrian
+circulation. Rail passenger service from Monroe to
+Shreveport commenced on July 10, 1884.</p>
+<p>Ironically, the installation of the railroad service
+initiated the demise of two regional institutions, the
+town of Trenton on the west side of the river and
+the steamboat industry. Trenton, which had been
+platted into town lots in 1851, declined with the
+location of the railroad two miles south. Cottonport,
+a tiny community at the bridgehead on the
+west side of the Ouachita, changed its name to
+West Monroe and eventually developed into an
+important business and industrial community.</p>
+<p>Steamboat traffic on the Ouachita, which had
+begun in 1819, yielded to the speed and flexibility of
+railroad service. The glamorous steamboating era
+of nearly a century of luxurious but sometimes
+tragic travel came to an end in the 1910&rsquo;s.</p>
+<h3 id="c5">20TH CENTURY DEVELOPMENT</h3>
+<p>Thus, the parish of Ouachita, which had been
+created in 1807 and which was subsequently divided
+into nine parishes, entered the 20th century as a
+rural agricultural region containing small urban
+entities. Surrounding Monroe were large plantations
+with cotton production as the major source of
+wealth. But with the discovery of gas by Louis
+Locke in 1916 in Morehouse Parish, the area
+became known as the Monroe Gas Field, one of
+the largest gas fields in the world at the time. With
+this wealth came progress&mdash;paved streets, &ldquo;skyscrapers&rdquo;
+and a salt water natatorium in the city of
+Monroe. And the parish prospered as well. Industries
+using available natural gas and paper mills
+using yellow pine from the nearby hilly region
+located in the area.</p>
+<p>Transportation routes have continued to unite
+the parish to the region and to the world. U.S.
+Highway 80 was constructed in the 1930&rsquo;s as a
+major east-west artery. Delta Air Lines began in
+Monroe as a small cotton dusting operation. And
+Interstate 20, completed in the 1960&rsquo;s, now serves
+as an important coast-to-coast transportation route.</p>
+<p>Ouachita Parish has been called the &ldquo;mother
+parish&rdquo; of northeast Louisiana. It has contributed
+much to the welfare of the region, and it continues
+to offer the leadership of a pacemaker parish as the
+twenty-first century approaches.</p>
+<div class="img" id="imgx2">
+<img src="images/p03a.jpg" alt="" width="1000" height="1072" />
+<p class="pcap"><i>Map of Ouachita Parish, 1980&rsquo;s</i>.</p>
+</div>
+<div class="pb" id="Page_6">6</div>
+<h2 id="c6"><span class="small">WEST OF THE OUACHITA....</span></h2>
+<div class="img">
+<img src="images/p04.jpg" id="ncfig2" alt="Map" width="1000" height="1515" />
+</div>
+<div class="pb" id="Page_7">7</div>
+<h3 id="c7">CONTRASTS ACROSS THE RIVER</h3>
+<p>The rolling piney hill landscape of Ouachita
+Parish west of the river contrasts with the delta
+overflow land east of the river. This contrast was
+reflected in settlement patterns with different land
+allocations and building techniques. The delta
+lands had been acquired by pioneers in the late
+18th century and a plantation economy evolved.
+The less productive western hilly area was settled in
+the 19th century as small farm holdings. The eastern
+lands were subject to river overflows; houses
+were elevated and were generally of wood frame
+construction. Pioneer houses west of the river were
+often constructed of logs on wood or stone piers in
+close proximity to the ground.</p>
+<p>Thus, contrasting cultures existed on opposite
+banks of the river. In this section the architecture
+of the western bank will be explored through an
+explanation of its extant architecture as evidenced
+in housing, out-buildings, churches and commercial
+buildings.</p>
+<h3 id="c8">THE LOG HOUSE, 19TH CENTURY</h3>
+<p>The early North Louisiana pioneers were more
+concerned with the erection of a shelter for protection
+from the elements and wildlife than they were
+with architectural styles. Folk houses were constructed
+of either horizontal logs or wood frame.</p>
+<p>The typical log folk house plans of the mid 19th
+century in the hilly country were the single pen
+(room) wide and the dogtrot. The dogtrot plan
+consisted of the two single pens (rooms) separated
+by a floored and roofed but open walled space.
+(The designation &ldquo;pen&rdquo; is used only in reference to
+the rooms built of log construction).</p>
+<p>Folk house plans constructed of wood frame
+during the 19th century were the one room, two
+room, saddlebag, dogtrot, central hall and later the
+gable front and wing. These house types will be
+examined subsequently.</p>
+<p>Pictured on this page are examples of log construction.
+In <a href="#fig4">figure 4</a> the logs were split; the inner
+room wall surface would be even. In <a href="#fig5">figure 5</a> may
+be seen several elements of folk log house construction
+in the drawing of a house being dismantled.
+This dogtrot with open passage between pens
+had an attached porch, square logs with square
+notches, an end exterior chimney (base visible),
+three inch round pole roof rafters and gallery door
+openings with the head occurring at the seventh
+log. In <a href="#fig6">figure 6</a> a close-up detail shows the square
+hewn logs and square notches on this dogtrot.</p>
+<div class="img" id="fig4">
+<img src="images/p04a.jpg" alt="" width="500" height="470" />
+<p class="pcap"><i>Fig. 4. Log notch detail (Bldg. 76).</i></p>
+</div>
+<div class="img" id="fig5">
+<img src="images/p04b.jpg" alt="" width="500" height="339" />
+<p class="pcap"><i>Fig. 5. An 1880&rsquo;s square notch log dogtrot (Bldg. 6).</i></p>
+</div>
+<div class="img" id="fig6">
+<img src="images/p04c.jpg" alt="" width="500" height="561" />
+<p class="pcap"><i>Fig. 6. Square notch detail (Bldg. 6).</i></p>
+</div>
+<div class="pb" id="Page_8">8</div>
+<div class="img" id="fig7">
+<img src="images/p05.jpg" alt="" width="500" height="323" />
+<p class="pcap"><i>Fig 7. An 1898 central-hall house with integral
+gallery (Bldg. 55).</i></p>
+</div>
+<div class="img" id="fig8">
+<img src="images/p05a.jpg" alt="" width="500" height="274" />
+<p class="pcap"><i>Fig. 8. Late 1890&rsquo;s gable-front-and-wing house
+(Bldg. 15).</i></p>
+</div>
+<div class="img" id="fig9">
+<img src="images/p05d.jpg" alt="" width="500" height="348" />
+<p class="pcap"><i>Fig. 9. Late 1880&rsquo;s two room house with vertical
+board and batten siding (Bldg. 77).</i></p>
+</div>
+<h3 id="c9">THE WOOD FRAME HOUSE, 19TH CENTURY</h3>
+<p>During the late 19th century and early 20th
+century wood frame construction was used to build
+high style and vernacular houses in the Greek
+Revival and Queen Anne styles. <a href="#fig7">Figure 7</a> depicts a
+late vernacular Greek Revival house with a symmetrical
+plan, and <a href="#fig8">figure 8</a> shows a Queen Anne
+house with asymmetrical plan.</p>
+<p>The central hall plan in <a href="#fig7">figure 7</a> has a steep roof
+with an integral gallery. Windows are six lights
+over six lights. A wing was attached to the rear.
+The original chimney is still visible.</p>
+<p>The gable front and wing plan house in <a href="#fig8">figure 8</a>
+was popular in the period from 1890 to 1920. The
+key feature was the forward wing which occupied a
+portion of the full gallery and the resultant half
+porch. Often the front wall of the wing was angled,
+or cut away, but the full roof gable remained. Or,
+an additional polygonal bay was added. Note the
+Queen Anne scroll and trim on the porch. This
+replaced the simple 6&Prime; &times; 6&Prime; square post of older
+house forms. This house plan sometimes featured
+a central hall.</p>
+<p>Though in a deteriorated state, the two room
+house in <a href="#fig9">figure 9</a> has features worth noting. The
+siding is vertical board and batten, a technique of
+construction which appeared with the erection of
+lumber and railroad worker housing in the 1880&rsquo;s.
+The front covered area does not extend the full
+width of the core; therefore, it is termed a &ldquo;porch&rdquo;
+in contrast to the &ldquo;gallery&rdquo; of the previous two
+examples. Also, it is &ldquo;attached&rdquo; and not &ldquo;integral&rdquo;
+with the main core roof structure.</p>
+<div class="pb" id="Page_9">9</div>
+<h3 id="c10">THE WOOD FRAME HOUSE, 20TH CENTURY</h3>
+<p>The 20th century houses shown on this page
+exhibit a quest for individuality and contemporary
+expression. <a href="#fig10">Figure 10</a> depicts a typical central hall
+plan. The roof is hip and not the usual gable. This
+detail required a shorter gallery which was not
+flush with the extreme end walls. The front door is
+flanked by full width windows. Shutters were
+added to the front gallery windows.</p>
+<p>The bungalow plan appeared in North Louisiana
+in the mid 1910&rsquo;s. This two room wide and two
+or more room deep house type (<a href="#fig11">figure 11</a>) proliferated
+in rural and urban areas. In its simplest form
+there was a forward facing gable with a porch.
+Here is depicted a half porch. Double windows
+were used.</p>
+<p>The 1930&rsquo;s house illustrated in <a href="#fig12">figure 12</a> is
+typical of the one room wide, several room deep
+shotgun plan found throughout much of Louisiana.
+This plan type became the typical house type for
+workers in New Orleans after the Civil War. It was
+seldom found in the hill parishes away from the
+waterways. In the shotgun depicted in <a href="#fig12">figure 12</a>
+plywood siding has been installed over the original
+horizontal siding on the porch.</p>
+<div class="img" id="fig10">
+<img src="images/p05e.jpg" alt="" width="500" height="355" />
+<p class="pcap"><i>Fig. 10. A 1910&rsquo;s central hall house with attached
+gallery (Bldg. 3).</i></p>
+</div>
+<div class="img" id="fig11">
+<img src="images/p05f.jpg" alt="" width="500" height="380" />
+<p class="pcap"><i>Fig. 11. The typical bungalow, two rooms wide with
+gable front (Bldg. 52).</i></p>
+</div>
+<div class="img" id="fig12">
+<img src="images/p05g.jpg" alt="" width="500" height="491" />
+<p class="pcap"><i>Fig. 12. Circa 1930 shotgun, one room wide with
+gable front (Bldg. 50).</i></p>
+</div>
+<div class="pb" id="Page_10">10</div>
+<h3 id="c11">THE FARM OUTBUILDING</h3>
+<div class="img" id="fig13">
+<img src="images/p06.jpg" alt="" width="500" height="327" />
+<p class="pcap"><i>Fig. 13. A transverse crib barn with wood shingles
+(Bldg. 73).</i></p>
+</div>
+<div class="img" id="fig14">
+<img src="images/p06a.jpg" alt="" width="500" height="307" />
+<p class="pcap"><i>Fig. 14. Animal shelter with round logs, saddle
+notches (Bldg. 47).</i></p>
+</div>
+<div class="img" id="fig15">
+<img src="images/p06b.jpg" alt="" width="500" height="336" />
+<p class="pcap"><i>Fig. 15. Storage building with wood floor and an
+addition with dirt floor (Bldg. 40).</i></p>
+</div>
+<p>The small farms in the hill country were to a
+large extent self-supporting. Certain elements,
+such as food staples and clothing, were purchased
+at area or regional stores. But the rural farmer
+needed additional facilities to provide for his other
+needs. Facilities were built on the farm separate
+from the dwelling itself.</p>
+<p>Farm outbuildings may be placed in two categories,
+dwelling-related outbuildings and farm-related
+outbuildings. Dwelling-related buildings were used
+on a daily basis and included the well house, smoke
+house, storage room, chicken house, privy, and
+sometimes the storm shelter. Farm related buildings,
+those necessary for agriculture and caring for
+livestock, included barns (single crib, double crib,
+transverse crib), storage buildings and often the
+potato house, blacksmith shop and syrup mill.
+&ldquo;Crib&rdquo; is a term used as a designation for room in
+farm outbuildings.</p>
+<p>The drawings on this page depict the nature of
+the construction of farm outbuildings. They are
+basic structures erected by the farmer and his
+neighbors from available materials. Usually they
+are in the rear of the dwelling. Style and quality
+and finish of materials were not of great importance.
+These buildings were altered as needed.</p>
+<p>The largest outbuilding was the barn which was
+used for the protection of horses and cattle and the
+storage of wagons and farm equipment. The transverse
+crib barn in <a href="#fig13">figure 13</a> included, in addition to
+the log crib, an open wagon shed, a sealed storage
+area and a loft for hay storage. Note the wood
+shingle roof and combination of rough sawn horizontal
+siding, logs, and vertical plank siding.</p>
+<p>The small building in <a href="#fig14">figure 14</a> is similar in
+design to a smoke house but was probably used for
+animal shelter. The round logs have saddle notches
+and no chinking between logs. Ventilation was thus
+provided. The side addition gave storage area.</p>
+<p>The clean, simple storage building in <a href="#fig15">figure 15</a>
+was constructed of flush sawn siding with a raised
+floor. The opening was for ventilation and light.
+The side addition has a dirt floor.</p>
+<div class="pb" id="Page_11">11</div>
+<h3 id="c12">THE RURAL PLACES OF ASSEMBLY AND COMMUNITY</h3>
+<div class="img" id="fig16">
+<img src="images/p06e.jpg" alt="" width="500" height="291" />
+<p class="pcap"><i>Fig. 16. 1920&rsquo;s rural church with single tower
+(Bldg. 20).</i></p>
+</div>
+<div class="img" id="fig17">
+<img src="images/p06g.jpg" alt="" width="500" height="412" />
+<p class="pcap"><i>Fig. 17. The 1885 Cadeville Masonic Lodge. (Bldg.
+54. Rear view in <a href="#fig1">fig. 1</a>).</i></p>
+</div>
+<div class="img" id="fig18">
+<img src="images/p06k.jpg" alt="" width="500" height="298" />
+<p class="pcap"><i>Fig. 18. The Red Rock General Store, circa 1910,
+with gallery and flagpole (Bldg. 7).</i></p>
+</div>
+<p>The physical area required for the small farm
+caused the dwellings to be dispersed among the
+hills. One result was the existence of the lonely
+farmstead and the extended neighborhoods.
+Community feelings developed and interactions
+occurred at places of meeting. These meetings
+were both formal and casual. The formal occasions
+would occur at the church, school, or in rare cases
+the Masonic Lodge. Informal gatherings occurred
+at the rural general store.</p>
+<p>The predominant religions in the hilly country
+west of the Ouachita were Baptist, Methodist, and
+Presbyterian. Church services would be held on
+Sunday. Some denominations would also have
+weekly prayer services. Additional community
+happenings were the annual graveyard clearing
+with &ldquo;dinner on the ground&rdquo; and a revival. At these
+events family and friends would discuss newsworthy
+events. <a href="#fig16">Figure 16</a> is an example of the small rural
+church which was built in the region.</p>
+<p>The Masonic Lodge was once an important
+community establishment. The Cadeville Lodge,
+<a href="#fig17">figure 17</a>, is one of the few lodge buildings remaining
+in North Louisiana. The first floor could be
+used for public services or community meetings.
+But the second floor was reserved for the private
+functions of the lodge members.</p>
+<p>The general store not only provided for the
+physical needs of the rural inhabitants, but also it
+contributed to their emotional well-being as well.
+The store owner would stock his business by traveling
+to distribution centers, often on the Ouachita
+River, purchasing goods and selling them to area
+residents. The regular weekly journey from the
+farm to the store would be a time for sharing news
+and discussing public events. Thus, supplied both
+physically and emotionally, the family member, or
+members, would return to the rural dwelling.</p>
+<p>The general store shown in <a href="#fig18">figure 18</a> had a
+porch for neighborly use, wide openings and a high
+ceiling for ventilation, and it even featured a flag
+pole in the front yard.</p>
+<div class="pb" id="Page_12">12</div>
+<h2 id="c13"><span class="small">EAST OF THE OUACHITA...</span></h2>
+<div class="img">
+<img src="images/p07.jpg" id="ncfig3" alt="Map" width="1000" height="1330" />
+</div>
+<div class="pb" id="Page_13">13</div>
+<h3 id="c14">THE RIVER PLANTATION HOUSES, 19TH CENTURY</h3>
+<p>The alluvial lands on the east side of the Ouachita
+fostered a settlement pattern which contrasted
+greatly with that of the hilly country west of the
+river. Large holdings had been claimed during the
+latter part of the 18th century and early 19th century.
+The Ouachita River then was the only source
+of regional transportation. Therefore, it was necessary
+from a communication transportation aspect
+that the land holdings possess headrights on the
+river.</p>
+<p>The resulting land holdings tended to have
+narrow frontage but deep extent. Annual spring
+overflows deposited silt near the river edge, and
+this high bank was the obvious location for the
+main buildings of the holding. Thus, the land also
+determined the hierarchy of architectural development
+on the holding.</p>
+<p>This hierarchy of spaces on the plantation
+followed a definite pattern. First, the river landing
+provided an entry to the owner&rsquo;s house. Behind the
+house would be the workers&rsquo; quarters, and beyond
+these were the buildings necessary for the operation
+of the plantation.</p>
+<p>Pictured on this page are details of two plantation
+houses typical of those which once lined the
+east bank of the Ouachita. The 1838 Filhoil raised
+cottage of <a href="#fig19">figure 19</a> has a Greek Revival portico
+with fan light in the front gable, Doric columns and
+a balustrade. The house was elevated for protection
+from the river overflow.</p>
+<p>The Whitehall Plantation house, <a href="#fig20">figure 20</a>, was
+built in 1858. Greek Revival style details include
+the squared transom and sidelights at the front
+door, low roof pitch, and pedimented window trim
+detail on the front gallery, <a href="#fig21">figure 21</a>. The gallery
+siding was flush but beaded. The windows extended
+to the floor allowing easy passage from interior
+rooms to the gallery. Operable, slatted shutters
+allowed sun control, ventilation, privacy.</p>
+<p>Whitehall is a 1&frac12; story house with dormers,
+attic rooms, and an integral gallery. These were
+typical features for the Greek Revival cottages of
+both North and South Louisiana. The central hall
+plan is another characteristic of this type, which is
+generally associated with American settlement.</p>
+<div class="img" id="fig19">
+<img src="images/p07a.jpg" alt="" width="500" height="408" />
+<p class="pcap"><i>Fig. 19. The 1830 Jean Baptiste Filhoil Greek
+Revival plantation house (Bldg. 134).</i></p>
+</div>
+<div class="img" id="fig20">
+<img src="images/p07b.jpg" alt="" width="500" height="309" />
+<p class="pcap"><i>Fig. 20. Whitehall Greek Revival plantation
+house, 1858 (Bldg. 127).</i></p>
+</div>
+<div class="img" id="fig21">
+<img src="images/p07c.jpg" alt="" width="500" height="446" />
+<p class="pcap"><i>Fig. 21. Detail of Whitehall gallery window, pilaster
+(Bldg. 127).</i></p>
+</div>
+<div class="pb" id="Page_14">14</div>
+<h3 id="c15">&ldquo;TURN OF THE CENTURY&rdquo; ONE ROOM, TWO ROOMS AND SHOTGUN HOUSES</h3>
+<div class="img" id="fig22">
+<img src="images/p08.jpg" alt="" width="500" height="307" />
+<p class="pcap"><i>Fig. 22. Circa 1910 two room house with integral
+gallery (Bldg. 120).</i></p>
+</div>
+<div class="img" id="fig23">
+<img src="images/p08a.jpg" alt="" width="500" height="433" />
+<p class="pcap"><i>Fig. 23. Front view of a circa 1920 one room house
+(Bldg. 115).</i></p>
+</div>
+<div class="img" id="fig24">
+<img src="images/p08d.jpg" alt="" width="500" height="343" />
+<p class="pcap"><i>Fig. 24. Side view of 1920 one room house
+(Bldg. 115).</i></p>
+</div>
+<p>The alluvial lands east of the Ouachita contained
+two categories of dwellings, those of the
+plantation owner as previously described and the
+houses of the tenants and small land owners. The
+dwellings depicted on these and subsequent pages
+are typical of the latter category. The basic folk
+house plan types used were the one room, two
+room, shotgun and later the bungalow. Houses
+were usually constructed of wood frame with vertical
+board and batten siding or horizontal milled
+siding.</p>
+<p>A feature which the basic one room and two
+room plan dwellings had in common was the integral
+front gallery. The gallery roof framing was
+part of the roof structure of the core of the dwelling.
+One might notice in <a href="#fig22">figure 22</a> that although
+two gallery columns are absent, the roof is still
+standing.</p>
+<p>The one room type is illustrated in figures <a href="#fig23">23</a>
+and <a href="#fig24">24</a>. The front view of the circa 1920 house
+shows a side addition to the original core room.
+The side view, <a href="#fig24">figure 24</a>, shows that this was originally
+two rooms deep since the space usually occupied
+by the rear gallery was enclosed. The roof had
+wood shingles on wood lath. The shingles were
+later replaced with sheets of tin.</p>
+<div class="pb" id="Page_15">15</div>
+<p>The two room plan houses in figures <a href="#fig25">25</a> and <a href="#fig26">26</a>
+were expanded as the space requirements of the
+occupants increased. The first example has a rear
+appendage. Vertical board and batten siding was
+used on the addition, but an inconsistency in
+window sash selection occurred. In <a href="#fig26">figure 26</a> the
+appendage was built as a shed addition on the side.
+This large two room house is two rooms in depth.
+This additional depth allows the roof to be
+higher, a definite advantage for the reduction of
+summer heat.</p>
+<div class="img" id="fig25">
+<img src="images/p08e.jpg" alt="" width="500" height="297" />
+<p class="pcap"><i>Fig. 25. Two room house with board and batten siding
+(Bldg. 118).</i></p>
+</div>
+<div class="img" id="fig26">
+<img src="images/p08f.jpg" alt="" width="500" height="283" />
+<p class="pcap"><i>Fig. 26. Circa 1910 two room house on the O.Z.O.
+Plantation (Bldg. 129).</i></p>
+</div>
+<p>The shotgun type house plan, <a href="#fig27">figure 27</a>, was
+used abundantly on the river plantations. The
+typical plan was one room wide and two or more
+rooms deep. There were front and rear gables.
+Variety occurred at the front gallery as evidenced
+in the pair of shotguns illustrated. The gallery
+might be the full width of the core allowing space
+for chairs and thus creating an extra &ldquo;room&rdquo; for
+relief from the summer heat of the interior rooms.
+This gallery also provided a place for social interaction
+between the occupants and passersby. In
+contrast with this situation, the porch on the right
+was of the width necessary only to protect the door
+from the elements and to provide shelter for those
+entering. As shown, shotgun houses were often in
+close proximity to each other. This feature may
+have had its background in the fact that the shotgun
+plan had been used in urban situations in New
+Orleans where property was extremely valuable.
+However, when the plan was transported to a rural
+situation, the close proximity characteristic remained.</p>
+<div class="img" id="fig27">
+<img src="images/p08g.jpg" alt="" width="500" height="285" />
+<p class="pcap"><i>Fig. 27. A pair of 1920&rsquo;s shotgun houses (Bldg.
+125).</i></p>
+</div>
+<div class="pb" id="Page_16">16</div>
+<h3 id="c16">THE 20TH CENTURY FARM BUNGALOW HOUSE</h3>
+<p>As the 20th century advanced so did the plans
+and techniques of constructing the folk house. The
+bungalow plan was introduced into North Louisiana
+circa 1915. This plan type was two rooms wide
+and two or more rooms deep with front and rear
+gables. The bungalow plan would continue to be a
+popular house type in the region until the advent of
+the ranch type plan after World War II.</p>
+<p>The dwelling pictured in <a href="#fig28">figure 28</a> was typical of
+the bungalow of the 1920&rsquo;s. As previously mentioned
+in reference to the shotgun house, the type
+of bungalow front gallery varied. The contrast may
+be observed in figures <a href="#fig28">28</a> and <a href="#fig29">29</a>&mdash;the nearly full
+width gallery with hipped roof and the half porch
+with gable roof. An almost universal feature of the
+bungalow house was the use of exposed rafter ends.</p>
+<div class="img" id="fig28">
+<img src="images/p09.jpg" alt="" width="500" height="316" />
+<p class="pcap"><i>Fig. 28. A 1933 bungalow plan with hipped
+gallery (Bldg. 123).</i></p>
+</div>
+<div class="img" id="fig29">
+<img src="images/p09a.jpg" alt="" width="500" height="289" />
+<p class="pcap"><i>Fig. 29. Gable screened porch on a Circa 1920
+bungalow plan house. (Bldg. 95).</i></p>
+</div>
+<p>It might appear that the occupant of the two
+room house in <a href="#fig30">figure 30</a> desired to update his
+dwelling to have contemporary characteristics
+similar to those of the bungalow. The remaining
+half porch was similar to those of many of the
+bungalow houses. The currently popular double
+window was used in lieu of the usual single opening.
+And the rear extension created the multiple
+room depth characteristic of the bungalow.</p>
+<div class="img" id="fig30">
+<img src="images/p09d.jpg" alt="" width="500" height="335" />
+<p class="pcap"><i>Fig. 30. A 1930 house with bungalow features
+(Bldg. 143).</i></p>
+</div>
+<div class="pb" id="Page_17">17</div>
+<h3 id="c17">OUTBUILDINGS</h3>
+<p>As was the case with the small farms west of the
+river, so the plantations and farms east of the river
+required outbuildings. Several examples of these
+outbuildings are represented.</p>
+<p>On this page are shown transverse crib barns;
+the major openings occur on the end elevations. In
+<a href="#fig31">figure 31</a> the typical transverse crib barn plan is
+evident with the center aisle being flanked by
+several cribs as shelter for stock. Above the opening
+is a loft for hay storage. This drawing is also
+descriptive of the landscape of the delta
+plantation&mdash;broad level expanses of open land in
+cultivation. Twentieth century communication
+systems are evident with the dirt road and telephone
+poles.</p>
+<div class="img" id="fig31">
+<img src="images/p09e.jpg" alt="" width="500" height="332" />
+<p class="pcap"><i>Fig. 31. Transverse crib barn in a delta landscape
+(Bldg. 140).</i></p>
+</div>
+<p>In figures <a href="#fig32">32</a> and <a href="#fig33">33</a> variations of the transverse
+barn are illustrated. A barn with side shed additions,
+vertical plank siding and loft storage would
+have sheltered a wagon in the center aisle (<a href="#fig32">figure 32</a>).
+A unique solution to the high water problem
+is evident in the barn shown in <a href="#fig33">figure 33</a>. The
+structure is raised and provides vehicle and stock
+shelter in dry seasons, but any valuable equipment
+could be removed as spring overflows inundated
+the land.</p>
+<div class="img" id="fig32">
+<img src="images/p09f.jpg" alt="" width="500" height="327" />
+<p class="pcap"><i>Fig. 32. Vertical planks on transverse crib barn
+(Bldg. 93).</i></p>
+</div>
+<div class="img" id="fig33">
+<img src="images/p09g.jpg" alt="" width="500" height="319" />
+<p class="pcap"><i>Fig. 33. A barn raised for high water protection
+(Bldg. 112).</i></p>
+</div>
+<div class="pb" id="Page_18">18</div>
+<div class="img" id="fig34">
+<img src="images/p10.jpg" alt="" width="500" height="329" />
+<p class="pcap"><i>Fig. 34. Circa 1900 log storage building (Bldg.
+128).</i></p>
+</div>
+<div class="img" id="fig35">
+<img src="images/p10a.jpg" alt="" width="500" height="623" />
+<p class="pcap"><i>Fig. 35. Half dovetail notches on 1900 log building
+(Bldg. 128).</i></p>
+</div>
+<h3 id="c18">A LOG OUTBUILDING</h3>
+<p>Log construction of outbuildings directly on the
+ground was not a common model of construction in
+the delta land. The obvious reason was that frequent
+overflows would tend to produce rapid decay
+of the wood members in contact with the soil. But
+a rare exception to this practice was found in the
+building illustrated in figures <a href="#fig34">34</a> and <a href="#fig35">35</a>. The relatively
+tall log storage building has continuous
+timbers as cantilever supports for side shed roofs.
+Whether these sheds ever had vertical post supports
+was not obvious on site inspection.</p>
+<p>The corner wall detail, <a href="#fig35">figure 35</a>, indicates that
+the large hewn timbers were assembled using half-dovetail
+notches. The horizontal logs were so
+closely cut that a minimum air space between logs
+remained. Chinking material was not used to fill
+these spaces.</p>
+<div class="pb" id="Page_19">19</div>
+<h3 id="c19">COMMUNITY BUILDINGS ON THE PLANTATION</h3>
+<div class="img" id="fig36">
+<img src="images/p10c.jpg" alt="" width="500" height="380" />
+<p class="pcap"><i>Fig. 36. Commissary store on Garrett Plantation
+(Bldg. 131).</i></p>
+</div>
+<div class="img" id="fig37">
+<img src="images/p10d.jpg" alt="" width="500" height="376" />
+<p class="pcap"><i>Fig. 37. 1920&rsquo;s church on the plantation (Bldg.
+98).</i></p>
+</div>
+<p>A commercial establishment which was necessary
+in the delta was the commissary. It served the
+same function as the general store previously described
+for the hill lands west of the river. The
+commissary depicted in <a href="#fig36">figure 36</a> has double doors
+flanked by large display windows. High windows
+on the side walls provide light and cross ventilation.
+This, too, would be a place for exchange of conversation
+as well as purchase of goods.</p>
+<p>The community church would serve the plantation
+workers and their families. The buildings were
+generally composed of one large assembly room
+and classrooms as appendages to the main building.
+A porch protected the double entry doors. A mark
+of individuality might have been created in the
+treatment of the belfry. The church illustrated in
+<a href="#fig37">figure 37</a> has a single small belfry, but often twin
+towers were constructed. In addition to this function
+as a summons to worship, the bell was often
+used as a community signal of momentous events
+such as a birth or death on the plantation.</p>
+<div class="pb" id="Page_20">20</div>
+<h2 id="c20"><span class="small">MONROE AND WEST MONROE,</span>
+<br />THE TWIN CITIES ON THE OUACHITA...</h2>
+<div class="img">
+<img src="images/p11.jpg" id="ncfig4" alt="Map" width="1200" height="1585" />
+</div>
+<div class="pb" id="Page_21">21</div>
+<h3 id="c21">THE ARCHITECTURE OF THE TWIN CITIES</h3>
+<p>Field research of the buildings of Ouachita
+Parish has revealed that there are three distinct
+characteristic types of architecture. In the western
+hilly region of the parish is the small farm type, and
+in the eastern river delta region the rural plantation
+type prevailed. Both of these have been previously
+described. The third category of architecture is the
+urban type, found within the environs of Monroe
+and West Monroe.</p>
+<p>Whereas the rural architecture, with the exception
+of the plantation owner&rsquo;s house, tended to be
+utilitarian and unconcerned with stylistic trends, the
+urban architecture very often was reflective of the
+currently popular national architectural styles. The
+styles most evident in extant residences in Monroe
+and West Monroe include Greek Revival, Queen
+Anne, Colonial Revival and California Bungalow.</p>
+<p>Styles found in ecclesiastical, civic and commercial
+buildings include Victorian Gothic and the
+Classic Revivals of the twentieth century.</p>
+<p>Following is a sampling of the various folk and
+styled architecture found within the city limits of
+Monroe and West Monroe.</p>
+<h3 id="c22">19TH CENTURY HOUSES ON THE RIVER</h3>
+<p>The Greek Revival house pictured in <a href="#fig38">figure 38</a>
+was built circa 1835 as the residence of the overseer
+for Lower Pargoud Plantation. A companion
+residence was constructed on the Upper Pargoud
+Plantation and exists at the end of Island Drive in
+Monroe.</p>
+<div class="img" id="fig38">
+<img src="images/p11c.jpg" alt="" width="500" height="291" />
+<p class="pcap"><i>Fig. 38. The Lower Pargoud Plantation overseer&rsquo;s
+house (Bldg. 143).</i></p>
+</div>
+<p>Layton Castle, <a href="#fig39">figure 39</a>, was begun before 1820
+as the residence of Judge Henry Bry. John James
+Audubon was a guest in the home during his visits
+to the wilderness of North Louisiana. In 1910 the
+house was renovated to resemble a European
+chateau.</p>
+<div class="img" id="fig39">
+<img src="images/p11d.jpg" alt="" width="500" height="374" />
+<p class="pcap"><i>Fig. 39. Layton Castle, begun before 1820, remodelled
+1910 (Bldg. 144).</i></p>
+</div>
+<p>The 1882 Cox house depicted in <a href="#fig40">figure 40</a> was
+approached through an oak alley facing the road,
+which later became South Grand Street. In the
+rear was a flower garden leading to the river.</p>
+<div class="img" id="fig40">
+<img src="images/p11e.jpg" alt="" width="500" height="346" />
+<p class="pcap"><i>Fig. 40. The 1882 Cox House on South Grand,
+Monroe (Bldg. 122).</i></p>
+</div>
+<p>These examples of 19th century houses were
+originally constructed in rural farming areas which
+have subsequently been incorporated into the city
+of Monroe.</p>
+<div class="pb" id="Page_22">22</div>
+<h3 id="c23">&ldquo;TURN OF THE CENTURY&rdquo; QUEEN ANNE HOUSES</h3>
+<p>The popular circa 1890 through 1910 house
+style, Queen Anne, had numerous identifying
+features. A steeply pitched roof of irregular shape
+often had a dominant front facing gable. Patterned
+shingles, cutaway bay windows and various other
+elements were used to avoid a smooth-walled
+appearance. The facade was asymmetrical, and
+often it had a partial or full width porch along a
+side wall as well as on the front.</p>
+<p>Queen Anne dwellings were also noted for their
+decorative detailing. Delicately turned porch
+columns and decorative spandrels with knob-like
+beads were common. Spindle work was used on
+railings, at porch ceilings, and under the roof
+overhangs at cutaway bays.</p>
+<p>The house in <a href="#fig41">figure 41</a> was constructed with
+forward gables, a partial porch on the front and a
+cutaway bay. Decorative elements include the
+ornamented gables and a spindlework frieze
+between the porch posts at the ceiling.</p>
+<div class="img" id="fig41">
+<img src="images/p12.jpg" alt="" width="500" height="270" />
+<p class="pcap"><i>Fig. 41. Queen Anne detailing on a circa 1890
+house. (Bldg. 145).</i></p>
+</div>
+<p>Miss Julia Wossman&rsquo;s house, <a href="#fig42">figure 42</a>, was
+moved from downtown to St. John Drive in the
+1950&rsquo;s. Note the forward gables, turned porch
+columns, the wrap-around porch, and spindlework
+at the cutaway front and side bay windows. The
+porch also has spindlework, brackets and knob-like
+beads in the frieze. Gables contain fish scale patterned
+shingles.</p>
+<div class="img" id="fig42">
+<img src="images/p12a.jpg" alt="" width="500" height="340" />
+<p class="pcap"><i>Fig. 42. Miss Julia Wossman&rsquo;s house, circa 1890
+(Bldg. 146).</i></p>
+</div>
+<p>The houses described represent only a sampling
+of the full range of extant Queen Anne houses in
+the urban area of the Twin Cities.</p>
+<h3 id="c24">20TH CENTURY COLONIAL REVIVAL HOUSES</h3>
+<div class="img" id="fig43">
+<img src="images/p12c.jpg" alt="" width="500" height="337" />
+<p class="pcap"><i>Fig. 43. The 1905 E. L. Neville Colonial Revival two
+story house (Bldg. 147).</i></p>
+</div>
+<p>Houses built after 1900 with the characteristics
+described as follows have been designated as being
+Colonial Revival style. A basic characteristic feature
+of this style was the accentuated front door
+<span class="pb" id="Page_23">23</span>
+with a porch supported by slender columns. Doors
+often had overhead fan or transom lights with sidelights,
+and windows contained double hung sash
+with multi-pane glazing in one or both sashes. As
+the 20th century advanced, windows were grouped
+in pairs of even units of three.</p>
+<p>The Ernest L. Neville house on Hudson Lane,
+Monroe, <a href="#fig43">figure 43</a>, was erected as a two story
+house with a dominant front gable with a multi-paned
+Palladian window, complete with keystone.
+The half-porch is full height with a railed balcony
+and Doric columns.</p>
+<p>The circa 1914 James Harvey Trousdale house,
+<a href="#fig44">figure 44</a>, on Hudson Lane is Colonial Revival in
+detailing, but the dominant, nearly square, configuration
+resembles that of a 19th century Louisiana
+raised cottage. Note the full story height raised
+basement area with the broad entrance steps.</p>
+<div class="img" id="fig44">
+<img src="images/p12d.jpg" alt="" width="500" height="357" />
+<p class="pcap"><i>Fig. 44. The J. H. Trousdale House circa 1914
+(Bldg. 148).</i></p>
+</div>
+<p>The George Weaks House on Riverside Drive,
+Monroe, <a href="#fig45">figure 45</a>, was built during the first decade
+of the 20th century. The full two-story semicircular
+porch with columns and pilasters has a balustrade
+and broad dormer at the roofline. The front door
+is accentuated with square transom and sidelights.
+Note the elaborate expanse of entry steps at the
+porch floor. Windows are glazed with multiple
+upper sash panes and a single lower sash pane.</p>
+<div class="img" id="fig45">
+<img src="images/p12e.jpg" alt="" width="500" height="418" />
+<p class="pcap"><i>Fig. 45. Classical porch on circa 1900&rsquo;s Weaks
+house.</i></p>
+</div>
+<p>Closer examination of the Weaks House in the
+porch detail, <a href="#fig46">figure 46</a>, reveals elaborate Colonial
+Revival detailing. The columns have Ionic capitals
+and fluting. The curved entablature with dentils is
+enhanced further with the application of moulded
+wood brackets under the roof eaves.</p>
+<div class="img" id="fig46">
+<img src="images/p12f.jpg" alt="" width="500" height="503" />
+<p class="pcap"><i>Fig. 46. Ionic column capitals on Weaks house
+(Bldg. 149).</i></p>
+</div>
+<p>The Neville, Trousdale, and Weaks Houses
+were built near the river in the area expanding to
+the north of Monroe. They, along with the Governor
+Hall house which follows, are examples of the
+early Colonial Revival period in Monroe.</p>
+<div class="pb" id="Page_24">24</div>
+<p>The Governor Luther Hall Colonial Revival
+home pictured in figures <a href="#fig47">47</a> and <a href="#fig48">48</a> was erected on
+Jackson Street in the older section of Monroe circa
+1906. It contains the characteristics of the style
+previously described&mdash;accentuated front door with
+full pedimented portico supported by slender
+columns, fan light and sidelights and multi-panes
+over single pane sashes. The Hall house also
+contains elaborate detailing in addition to these
+usual characteristics of the Colonial Revival style.</p>
+<div class="img" id="fig47">
+<img src="images/p13.jpg" alt="" width="500" height="337" />
+<p class="pcap"><i>Fig. 47. Gov. Luther Hall&rsquo;s circa 1906 home
+(Bldg. 150).</i></p>
+</div>
+<div class="img" id="fig48">
+<img src="images/p13a.jpg" alt="" width="500" height="337" />
+<p class="pcap"><i>Fig. 48. Elaborate porch detail on Hall home
+(Bldg. 150).</i></p>
+</div>
+<p>The detail drawing of the Governor Hall house,
+<a href="#fig48">figure 48</a>, is illustrative of elaborate, nearly excessive,
+detailing. The window not only possesses
+pilaster trim with an entablature and pediment, but
+also a design featuring interlocking segmental and
+square panes in the upper sash. The entry door is
+slightly recessed which allows space for three
+segmented arches with keystones on Doric columns.
+And, in addition, the balcony above is
+supported by four curved fan-like wooden brackets.
+Note the large scale column bases.</p>
+<p>The Travis Oliver house at the north end of
+Riverside Drive in <a href="#fig49">figure 49</a> is indicative of the
+continued popularity of the Colonial Revival style
+in the cities. Built circa 1930, this two story house,
+similar to those previously described, has a full
+porch with slender columns, a small balcony and
+accentuated front door with an elliptical transom
+and sidelights. But certain mutations make this
+Colonial Revival house distinct from those previously
+described. The lower front windows are
+wood casement with a semicircular wood fan
+above. Second story windows are large eight over
+eight pane double-hung sash. Most importantly,
+the house is of brick veneer construction. Those
+previously described have horizontal wood siding.
+The 1930&rsquo;s decade witnessed the apparent popularity
+and desirability of the use of brick in preference
+to wood as an exterior cladding material.</p>
+<div class="img" id="fig49">
+<img src="images/p13c.jpg" alt="" width="500" height="337" />
+<p class="pcap"><i>Fig. 49. Circa 1930 Oliver house on Riverside,
+Monroe (Bldg. 151).</i></p>
+</div>
+<p>Although Colonial Revival has been a dominant
+style for house construction in the Monroe and
+West Monroe area during the 20th Century, other
+styles are represented and will be described following.</p>
+<div class="pb" id="Page_25">25</div>
+<h3 id="c25">VARIOUS 20TH CENTURY HOUSE STYLES</h3>
+<p>During the first three decades of the 20th
+century, while the Colonial Revival houses were
+being built in both one and two story versions,
+other styles were being represented in the Twin
+Cities. The Tudor Revival, Prairie Style and the
+California Bungalow received widespread acceptance
+in the 1920&rsquo;s and 1930&rsquo;s. One selection each
+of the Tudor Revival and Prairie Style are illustrated
+herein; also depicted is an example of a hybrid
+Queen Anne-California Bungalow House.</p>
+<p>The Tudor Revival style, popular in the United
+States from 1890 to 1940, received only nominal
+acceptance in North Louisiana. Characteristics
+included a simple box plan with extensions, facade
+dominated by two or more prominent cross gables
+and windows in multiple groupings with multipane
+glazing. Also used were massive chimneys with
+chimney pots.</p>
+<p>The Masur Museum on South Grand Street in
+Monroe was constructed 1929 by Elmer Slagle, Sr.
+Depicted in <a href="#fig50">figure 50</a> are the characteristics of the
+Tudor Revival described above. This stone veneer
+house has a mezzanine porch in the rear overlooking
+a formal garden and the Ouachita River.</p>
+<div class="img" id="fig50">
+<img src="images/p13d.jpg" alt="" width="500" height="295" />
+<p class="pcap"><i>Fig. 50. The 1929 Slagle house, now Masur
+Museum (Bldg. 152).</i></p>
+</div>
+<p>A Monroe landmark is the 1926 G. B. Cooley
+house also on South Grand Street. See <a href="#fig51">figure 51</a>.
+Designed by the architect Walter Burley Griffin, an
+associate of Frank Lloyd Wright, the plan was laid
+out to resemble the decks of a steamboat. Mr.
+Cooley, the owner, was a steamboat captain who
+plied the Ouachita for many years. The Prairie
+Style house has 100 windows which may be opened
+to take advantage of summer breezes.</p>
+<div class="img" id="fig51">
+<img src="images/p13f.jpg" alt="" width="500" height="321" />
+<p class="pcap"><i>Fig. 51. Cooley house designed in the Prairie Style
+(Bldg. 153).</i></p>
+</div>
+<p>An interesting Trenton Street house in West
+Monroe, <a href="#fig52">figure 52</a>, represents a mingling of stylistic
+detailing. The gable has wood shingles similar to
+those used in the Queen Anne styles, and the small
+patterned window panes of that period are reused
+in a new form. But the exposed rafter ends and
+expansive overhangs are characteristics of the
+California Bungalow style.</p>
+<div class="img" id="fig52">
+<img src="images/p13h.jpg" alt="" width="500" height="312" />
+<p class="pcap"><i>Fig. 52. On Trenton Street, West Monroe, a gable
+detail. (Bldg. 154).</i></p>
+</div>
+<p>Thus, Monroe and West Monroe contain a
+variety of residential stylistic expressions as evidenced
+in the extant houses.</p>
+<div class="pb" id="Page_26">26</div>
+<h3 id="c26">THE 20TH CENTURY CALIFORNIA BUNGALOW HOUSE</h3>
+<div class="img" id="fig53">
+<img src="images/p14.jpg" alt="" width="500" height="350" />
+<p class="pcap"><i>Fig. 53. A California Bungalow in north Monroe
+(Bldg. 155).</i></p>
+</div>
+<div class="img" id="fig54">
+<img src="images/p14b.jpg" alt="" width="500" height="335" />
+<p class="pcap"><i>Fig. 54. An expressive West Monroe California
+Bungalow (Bldg. 156).</i></p>
+</div>
+<p>An innovation in housing design and stylistic
+detailing occurred in North Louisiana during the
+second decade of the 20th century. The houses of
+two California architects, Charles and Henry
+Greene, led to the establishment of a style known
+as &ldquo;Craftsman.&rdquo; Several influences&mdash;the English
+Arts and Crafts movement, interest in oriental
+wood architecture and training in the manual
+arts&mdash;may have encouraged the Greene brothers to
+design intricately detailed buildings. Their work
+and other California residences received publicity
+in the various national magazines. Thus, the one-story
+Craftsman house soon became the most
+popular and fashionable smaller house in the
+country. In Louisiana these houses have been
+labeled &ldquo;California Bungalows.&rdquo;</p>
+<p>The characteristic features occurred normally
+on the facades, that portion of the house most visible
+to the public. The low-pitched gabled roof had
+wide, unenclosed eaves and overhangs and roof
+rafters were exposed and decorative false beams or
+braces occurred under the gables. Porches were
+full or partial width across the front.</p>
+<p>The porch or gallery columns had distinctive
+detailing. Typically, short square upper columns
+were placed over more massive masonry piers or a
+solid porch balustrade (skirt). The columns, piers,
+or balustrades often began at ground level and
+extended with no interruption to a level above the
+porch floor.</p>
+<p>The California Bungalow style houses constitute
+the most numerous group of extant styled houses in
+the Twin Cities. As such, they represent a definite
+attempt to establish a styled expression of individuality
+for the houses of the general populace. The
+examples illustrated on these pages are representative
+of this style.</p>
+<div class="pb" id="Page_27">27</div>
+<p>In <a href="#fig53">figure 53</a> a California Bungalow in north
+Monroe was built with the front gable expressed in
+the broad three-windowed dormer. Note the
+extensive dormer roof overhang. The full width
+front gallery is provided with screens between the
+straight full height wood columns; the gallery roof
+overhang contains exposed rafter ends.</p>
+<p>Another expression of the California Bungalow
+appeared in the circa 1930 West Monroe house
+shown in <a href="#fig54">figure 54</a>. This two story house has a
+front gable and multiple groupings of windows.
+But the greatest expression occurs in the one-story
+gallery. It has a smaller low pitched gable roof with
+four full height square brick piers and a half height
+brick pier near the door. The balustrade continues
+to the side porte cochere, or car shelter.</p>
+<p>The freedom of design offered by the California
+Bungalow style allowed a house form beyond that
+of the standard simple rectangle, and the West
+Monroe circa 1920 house in <a href="#fig55">figure 55</a> used this
+freedom. The roof contains no gables, the front
+porch is allowed to wrap around the side, and the
+rear porch is enclosed providing additional room.
+The exposed rafter ends support a rather deep
+overhang. The porch supports are constructed of
+massive wood posts on half height brick piers.</p>
+<div class="img" id="fig55">
+<img src="images/p14c.jpg" alt="" width="500" height="313" />
+<p class="pcap"><i>Fig. 55. A rambling California Bungalow on Trenton
+St., West Monroe (Bldg. 157).</i></p>
+</div>
+<p>Yet another expression occurs in the West
+Monroe circa 1926 house in <a href="#fig56">figure 56</a>. The high
+roof allows space for attic rooms. Note shed roof
+dormer.</p>
+<div class="img" id="fig56">
+<img src="images/p14d.jpg" alt="" width="500" height="304" />
+<p class="pcap"><i>Fig. 56. Another expression of the popular California
+Bungalow (Bldg. 158).</i></p>
+</div>
+<p>The California Bungalow style continued to be
+popular in the region until after World War II
+when it was supplanted by the &ldquo;ranch&rdquo; form house
+with a concrete slab floor.</p>
+<div class="pb" id="Page_28">28</div>
+<h3 id="c27">A 20TH CENTURY COMPLEX&mdash;IN THE CITY</h3>
+<p>When the J. E. Peters house and auxiliary buildings
+were built in the late 1920&rsquo;s and 1930&rsquo;s, the site
+was on the southern limits of the city of Monroe,
+but it subsequently was included within the city
+boundaries. Thus, today a unique rural atmosphere
+exists within an urban context.</p>
+<p>The complex depicted in figures <a href="#fig57">57</a> through <a href="#fig60">60</a>
+contains a two story house, garage apartment,
+storage or quarters building and a pair of water
+storage tanks.</p>
+<p>The two story house, <a href="#fig57">figure 57</a>, contains four
+rooms over four rooms and a stair and bath facilities.
+The one story gallery on the front and side
+provides ample opportunity for relaxation and
+relief from the heat of the interior rooms in the
+summer. Note the absence of a chimney; winter
+heating would have been provided by the newly
+discovered natural gas.</p>
+<div class="img" id="fig57">
+<img src="images/p15.jpg" alt="" width="500" height="488" />
+<p class="pcap"><i>Fig. 57. The drawings on these pages are of the
+same site in south Monroe, the Peters house
+(Bldg. 126).</i></p>
+</div>
+<p>In the rear of the Peters house is a 1930&rsquo;s
+garage apartment, <a href="#fig58">figure 58</a>. This element is a
+unique feature in the history of urban residential
+architecture. The automobile became obtainable
+by the urban family during the second decade of
+the 20th century, and it was sheltered in a structure
+separate from the residence. The garage would
+usually provide shelter for one to two automobiles.</p>
+<div class="img" id="fig58">
+<img src="images/p15a.jpg" alt="" width="500" height="510" />
+<p class="pcap"><i>Fig. 58. A garage apartment adjacent to the house.
+(Bldg. 126).</i></p>
+</div>
+<div class="pb" id="Page_29">29</div>
+<p>Often an apartment would be placed above the
+garage, as shown. Note the exterior access stairway.
+In post World War II residences the automobile
+would be sheltered in a garage attached to the
+main residence; subsequently this garage would
+relinquish its walls and doors and be known as a
+&ldquo;carport.&rdquo; Thus, the garage apartment holds a
+unique place in America domestic architecture.</p>
+<p>The Peters store house, or quarters, <a href="#fig59">figure 59</a>,
+also was representative of the era described. This
+building has exposed rafter ends, five panel doors,
+milled (not brick) siding, and is raised three steps
+above the ground.</p>
+<div class="img" id="fig59">
+<img src="images/p15c.jpg" alt="" width="500" height="491" />
+<p class="pcap"><i>Fig. 59. The storage building in the rear (Bldg. 126).</i></p>
+</div>
+<p>The water towers shown in <a href="#fig60">figure 60</a> are elevated
+to provide gravity pressure for water needed on
+the farm complex, whether for irrigation or livestock
+or domestic use. The towers are situated in a
+grove of pecan trees.</p>
+<div class="img" id="fig60">
+<img src="images/p15d.jpg" alt="" width="500" height="428" />
+<p class="pcap"><i>Fig. 60. Water tanks on the farm site (Bldg. 126).</i></p>
+</div>
+<p>As urbanization increased, the opportunity for
+complexes such as this to survive decreased.
+Holdings were subdivided into residential lots, and
+the rural feeling and inherent privacy which it
+provided yielded to an environment of urban
+compactness. This is the price of progress as a city
+expands.</p>
+<div class="pb" id="Page_30">30</div>
+<h3 id="c28">URBAN ECCLESIASTICAL</h3>
+<p>A distinct contrast exists between the rural
+ecclesiastical building and that of the urban area.
+The urban congregations tended to require more
+stylized edifices for worship. This may be apparent
+in the examples illustrated herein.</p>
+<p>The 1899 St. Matthews Roman Catholic Church
+is an excellent example of the Gothic Revival style.
+Characteristics of this style include the tower with
+belfry and spire, the single or grouped pointed-arch
+windows, the stepped buttresses and deeply recessed
+openings and wooden doors. These characteristics
+are evident in the church in <a href="#fig61">figure 61</a>.</p>
+<div class="img" id="fig61">
+<img src="images/p16.jpg" alt="" width="500" height="779" />
+<p class="pcap"><i>Fig. 61. The 1899 Gothic Revival St. Matthews
+Church (Bldg. 159).</i></p>
+</div>
+<p>The Tabernacle Baptist Church on Beard
+Street, Monroe, was a later version of a style conscious
+church building. The opening is recessed
+and has a round arch over the door. A vertical
+accent was obtained by use of the small tower,
+<a href="#fig62">figure 62</a>. Brick as an exterior wall finishing material
+was commonly used in the towns; this contrasted
+to the almost universal use of wood siding on
+churches in the rural areas of the parish.</p>
+<div class="img" id="fig62">
+<img src="images/p16a.jpg" alt="" width="500" height="561" />
+<p class="pcap"><i>Fig. 62. Tabernacle Baptist Church on Beard
+Street, Monroe (Bldg. 160).</i></p>
+</div>
+<div class="pb" id="Page_31">31</div>
+<h3 id="c29">EDUCATIONAL BUILDINGS</h3>
+<p>There are a number of extant 50 year old
+educational buildings in the Twin Cities which are
+excellent examples of the various prevailing architectural
+styles. The Mediterranean style is evident
+in such elementary schools as Georgia Tucker, Lida
+Benton, and Barksdale Faulk. Jacobean Revival
+may be seen in the old Ouachita Parish High
+School building on South Grand; Art Deco is
+represented in Neville High School on Forsythe
+Avenue, Monroe. It is very fortunate that these
+buildings remain and are either still being utilized
+as educational facilities or are being converted for
+contemporary adaptive reuse, the latter being the
+case in the South Grand building mentioned.</p>
+<p>Georgia Tucker School, <a href="#fig63">figure 63</a>, was built in
+1919 and named for Mrs. Georgia Tucker Stubbs, a
+member of a pioneer Ouachita Parish family. Its
+Mediterranean style features include monumentality,
+solidity, use of low arches and imaginative
+towers. It also employs a unique treatment of
+terracotta in cast panels and columns capitals. One
+might note the use of free standing decorative nonfunctional
+columns on the front. The separate
+entrances for grades one through three and grades
+four through six are clearly defined.</p>
+<div class="img" id="fig63">
+<img src="images/p16c.jpg" alt="" width="500" height="313" />
+<p class="pcap"><i>Fig. 63. Georgia Tucker School, 1919 (Bldg.
+162).</i></p>
+</div>
+<p>The Jacobean Revival style was used for the
+Ouachita Parish High School building depicted in
+<a href="#fig64">figure 64</a>. Built in the late 1920&rsquo;s, this three story
+remnant of the high school complex displays
+monumentality and elaborate detailing at the South
+Grand Street entrance to the classroom building.
+Quoins were used at masonry corners. The roof
+parapet wall contains decorative penetrations and
+projections as an expression of the method in which
+the building relates to the skyline.</p>
+<div class="img" id="fig64">
+<img src="images/p16d.jpg" alt="" width="500" height="596" />
+<p class="pcap"><i>Fig. 64. The Jacobean Revival Ouachita Parish
+High School building, 1920&rsquo;s (Bldg. 161).</i></p>
+</div>
+<div class="pb" id="Page_32">32</div>
+<h3 id="c30">URBAN COMMERCIAL AND CIVIC BUILDINGS</h3>
+<p>It has been previously illustrated that the urban
+residential, ecclesiastical and educational buildings
+were constructed to reflect current stylistic trends
+more than their rural counterparts; a similar observation
+might be made about commercial urban and
+rural buildings. The urban commercial buildings
+depicted on these two pages represent some of the
+stylistic expressions of the Twin Cities from the
+time of early settlement, the 1840&rsquo;s, to the period of
+the oil boom, the 1930&rsquo;s. As such, they might be
+viewed as a summary of commercial architecture in
+the Twin Cities.</p>
+<p>The Isaiah Garrett law office, <a href="#fig65">figure 65</a>, was
+constructed in the 1840&rsquo;s. Its configuration is similar
+to that of the small residence of the period, a
+two room core with rear wing, chimneys on end
+elevations, and an attached front gallery. This
+building is now the Colonial Dames Museum.</p>
+<div class="img" id="fig65">
+<img src="images/p17.jpg" alt="" width="500" height="298" />
+<p class="pcap"><i>Fig. 65. Isaiah Garrett law office, 1840&rsquo;s (Bldg.
+163).</i></p>
+</div>
+<p>The two story commercial building shown in
+<a href="#fig66">figure 66</a> was built in the 1890&rsquo;s on North Grand
+Street. It contains large glass areas for display and
+interior light, and the second floor contains arched
+windows on the street facade but flat lintel windows
+overlooking the river.</p>
+<div class="img" id="fig66">
+<img src="images/p17a.jpg" alt="" width="500" height="322" />
+<p class="pcap"><i>Fig. 66. 1890&rsquo;s commercial building on North
+Grand, Monroe (Bldg. 164).</i></p>
+</div>
+<p>T. M. Parker built a two story commercial building
+on DeSiard Street in 1908, <a href="#fig67">figure 67</a>. This
+building was used as a hotel for a long period.
+There is a similarity in the manner in which the
+roof lines of the buildings in figures <a href="#fig67">67</a> and <a href="#fig68">68</a> were
+constructed, since both parapets have shaped and
+raised center sections and projecting cornices.</p>
+<div class="img" id="fig67">
+<img src="images/p17f.jpg" alt="" width="500" height="290" />
+<p class="pcap"><i>Fig. 67. The T. M. Parker Building on DeSiard
+Street (Bldg. 165).</i></p>
+</div>
+<p>The West Monroe 1909 two story building
+depicted in <a href="#fig68">figure 68</a> was built with similar characteristics
+as those previously described, a large glass
+area on ground floors and a masonry upper facade.
+But this building contains other individualistic
+<span class="pb" id="Page_33">33</span>
+features. The second floor opens onto a balcony
+which overlooks the Ouachita River, and a very
+elaborate cast stone lady&rsquo;s head is incorporated
+into the pilaster on the left side of the front elevation.
+A companion sculpture on the right pilaster
+no longer exists. One might wonder if it were a
+male or female likeness.</p>
+<div class="img" id="fig68">
+<img src="images/p17h.jpg" alt="" width="500" height="340" />
+<p class="pcap"><i>Fig. 68. A West Monroe commercial building,
+1909 (Bldg. 166).</i></p>
+</div>
+<p>Civic architecture is represented by the 1925
+Ouachita Parish Courthouse, <a href="#fig69">figure 69</a>. Neoclassicism
+was used to represent monumentality through
+the application of engaged Ionic columns on the
+major facades. Broad entry terraces and steps
+heightened the drama of entry into the main floor.
+The roofline contains a balustrade as an expression
+of uniting the building with the skyline.</p>
+<div class="img" id="fig69">
+<img src="images/p17k.jpg" alt="" width="500" height="463" />
+<p class="pcap"><i>Fig. 69. The neoclassical Ouachita Parish Courthouse
+1925 (Bldg. 167).</i></p>
+</div>
+<p>The Frances Hotel, <a href="#fig70">figure 70</a>, was constructed
+in 1930 and named for Mrs. Frances McHenry,
+wife of a founder of Delta Airlines. Its Art Deco
+style has a pronounced verticality and linear quality.
+This early Monroe skyscraper has elaborate
+window and facade treatment on the first three
+floors with minimal facade decoration on the hotel
+room floors above. The building is crowned with
+elaboration on the facades of the top floor. This
+floor once contained a ballroom which overlooked
+the city and the river. Arched windows with elaborate
+projections above broke the skyline. And
+above the roof was an enormous red beacon which
+was visible for miles at night. The beacon no longer
+is lighted.</p>
+<div class="img" id="fig70">
+<img src="images/p17m.jpg" alt="" width="500" height="733" />
+<p class="pcap"><i>Fig. 70. Frances Hotel, Monroe, a 1930 Art Deco
+building (Bldg. 168).</i></p>
+</div>
+<p>The buildings pictured on these and the four
+preceding pages are examples of the manner in
+which the designers attempted to create aesthetically
+pleasing architecture for both the distant and the
+near-by viewer. Several have interesting rooflines
+which integrate the built environment with the
+skyline. They also contain elements which may be
+viewed from a closer position as a person enters
+the building; such elements include steps, entry
+details, and intricate window trim.</p>
+<div class="pb" id="Page_34">34</div>
+<h2 id="c31"><span class="small">CONCLUSION....</span></h2>
+<p>Ouachita Parish possesses a rich architectural
+heritage. In time, this heritage spans from the
+beginnings of Layton Castle in the early 1800&rsquo;s to
+the high rise Frances Hotel of the 1930&rsquo;s&mdash;and on
+to the present. In terms of style, this heritage
+includes the simple one room houses as well as
+representatives of Greek Revival, Queen Anne,
+Gothic Revival, Colonial Revival, Classic Revival,
+California Bungalow, Prairie Style, Tudor Revival,
+and Art Deco.</p>
+<p>The life styles and cultures of the inhabitants
+are reflected and expressed in this architectural
+heritage. These cultures included that of the small
+farms west of the river, the plantations east of the
+river, and the urban culture as seen in the architecture
+of Monroe and West Monroe. What a rich
+assortment exists within a 20 mile radius of the
+center of Ouachita Parish.</p>
+<p>But this heritage is in danger. As progress
+continues and prosperity grows, the architectural
+heritage often diminishes. Older buildings are seen
+as liabilities and become victims of the wrecking
+ball. These buildings, whether constructed of log
+or brick with Romanesque or Gothic details, will
+not be erected again. Therefore, the visual insights
+into past cultures which these older buildings
+represent are lost forever.</p>
+<p>It is hoped that the publication of this collection
+of Ouachita Parish&rsquo;s architectural heritage will
+make the public more aware of its valuable treasure
+as evidenced in older architecture. And in turn,
+it is hoped that this awareness will assist in the
+preservation of vestiges of our traditional past.</p>
+<p><span class="lr">F. Lestar Martin</span></p>
+<div class="img" id="fig71">
+<img src="images/p18.jpg" alt="" width="800" height="744" />
+<p class="pcap"><i>Bright-Lamkin-Easterling House, 1890.</i></p>
+</div>
+<h2 id="c32"><span class="small">CATALOG OF BUILDINGS</span></h2>
+<p>The following listing contains information on extant
+buildings 50 years old in Ouachita Parish (excluding
+Monroe and West Monroe, cataloged in the La.
+Tech Arch. Dept.). Building number is followed by
+building type designation, porch type, siding and
+date.</p>
+<table class="center">
+<tr class="th"><th>Survey Number </th><th>Type </th><th>Remarks</th></tr>
+<tr><td class="l">1. </td><td class="l">One Room </td><td class="l">Attached porch, asb. siding, c.1930.</td></tr>
+<tr><td class="l">2. </td><td class="l">Central hall </td><td class="l">Integral gallery, c.1913.</td></tr>
+<tr><td class="l">3. </td><td class="l">Central hall </td><td class="l">Attached gallery, asbestos, c.1917.</td></tr>
+<tr><td class="l">4. </td><td class="l">Central hall </td><td class="l">Attached porch, asbestos, c.1920.</td></tr>
+<tr><td class="l">5. </td><td class="l">Two room </td><td class="l">No gallery, asbestos, c.1920.</td></tr>
+<tr><td class="l">6. </td><td class="l">Dogtrot </td><td class="l">Square logs and notches, c.1880.</td></tr>
+<tr><td class="l">7. </td><td class="l">Other </td><td class="l">Gen. store, integral gallery, vert. bd/batten, c.1910.</td></tr>
+<tr><td class="l">8. </td><td class="l">Bungalow </td><td class="l">Attached gallery, milled siding c.1926.</td></tr>
+<tr><td class="l">9. </td><td class="l">Other </td><td class="l">Liberty Baptist Church, asbestos, c.1915.</td></tr>
+<tr><td class="l">10. </td><td class="l">Dogtrot </td><td class="l">Enclosed, att. gallery, milled, c.1890.</td></tr>
+<tr><td class="l">11. </td><td class="l">Central hall </td><td class="l">Attached gallery, asphalt, c.1900.</td></tr>
+<tr><td class="l">12. </td><td class="l">Two room </td><td class="l">Attached gallery, milled, c.1910.</td></tr>
+<tr><td class="l">13. </td><td class="l">Central hall </td><td class="l">Attached gallery, milled, c.1930.</td></tr>
+<tr><td class="l">14. </td><td class="l">Other </td><td class="l">Gable front &amp; wing, attached porch, milled, c.1910.</td></tr>
+<tr><td class="l">15. </td><td class="l">Other </td><td class="l">Gable front &amp; wing, attached porch, milled, c.1900.</td></tr>
+<tr><td class="l">16. </td><td class="l">Bungalow </td><td class="l">Integral porch, milled, c.1930.</td></tr>
+<tr><td class="l">17. </td><td class="l">Two room </td><td class="l">Rare plan, gingerbread cols. &amp; trim, attached gallery, milled c.1900.</td></tr>
+<tr><td class="l">18. </td><td class="l">Shotgun </td><td class="l">Shotgun, integral gallery, milled c.1920.</td></tr>
+<tr><td class="l">19. </td><td class="l">One room </td><td class="l">Integral gallery, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">20. </td><td class="l">Other </td><td class="l">Mt. Horeb Church, milled, c.1920.</td></tr>
+<tr><td class="l">21. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, 1925.</td></tr>
+<tr><td class="l">22. </td><td class="l">Bungalow </td><td class="l">Integral half porch, milled, 1930.</td></tr>
+<tr><td class="l">23. </td><td class="l">Other </td><td class="l">Triple room, integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">24. </td><td class="l">Bungalow </td><td class="l">Integral side porch, milled, c.1931.</td></tr>
+<tr><td class="l">25. </td><td class="l">Other </td><td class="l">Bungalow type, attached porch, asbestos, c.1935.</td></tr>
+<tr><td class="l">26. </td><td class="l">Central hall </td><td class="l">Attached gallery, sawn siding, c.1900.</td></tr>
+<tr><td class="l">27. </td><td class="l">Dogtrot </td><td class="l">Enclosed, part half log, attached gallery, milled, 1890, Caldwell farm.</td></tr>
+<tr><td class="l">28. </td><td class="l">Outbldg. </td><td class="l">Round log w/sq. notches, shingle roof, 1880&rsquo;s, Caldwell farm.</td></tr>
+<tr><td class="l">29. </td><td class="l">Dogtrot </td><td class="l">Integral gallery, vert. bd./batten siding, c.1900, Caldwell Farm. Log Outbuildings.</td></tr>
+<tr><td class="l">30. </td><td class="l">Bungalow </td><td class="l">Attached porch, asbestos, 1937.</td></tr>
+<tr><td class="l">31. </td><td class="l">Central hall </td><td class="l">Attached gallery, asbestos, 1925, Wallace farm.</td></tr>
+<tr><td class="l">32. </td><td class="l">Shotgun </td><td class="l">Shotgun, integral gallery, milled, 1920.</td></tr>
+<tr><td class="l">33. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, 1920.</td></tr>
+<tr><td class="l">34. </td><td class="l">Bungalow </td><td class="l">No porch, milled, 1930.</td></tr>
+<tr><td class="l">35. </td><td class="l">Bungalow </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">36. </td><td class="l">Two room </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">37. </td><td class="l">Outbldg. </td><td class="l">Transverse crib barn, tin siding, c.1930.</td></tr>
+<tr><td class="l">38. </td><td class="l">Shotgun </td><td class="l">No porch, vert. bd./batten siding, c.1920.</td></tr>
+<tr class="pbtr"><td colspan="3">
+<span class="pb" id="Page_35">35</span>
+</td></tr>
+<tr><td class="l">39. </td><td class="l">Bungalow </td><td class="l">Attached porch, vert. bd./batten siding 1930.</td></tr>
+<tr><td class="l">40. </td><td class="l">Outbldg. </td><td class="l">Storage, sawn siding, c.1930.</td></tr>
+<tr><td class="l">41. </td><td class="l">Other </td><td class="l">Gen. store, various additions, vert. bd./batten, c.1920</td></tr>
+<tr><td class="l">42. </td><td class="l">Outbldg. </td><td class="l">Round log, saddle notch corn crib, c.1920</td></tr>
+<tr><td class="l">43. </td><td class="l">Shotgun </td><td class="l">Shotgun, no porch, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">44. </td><td class="l">Outbldg. </td><td class="l">Tranverse crib barn, vert. siding, 1935, Golson fam.</td></tr>
+<tr><td class="l">45. </td><td class="l">Dogtrot </td><td class="l">Attached gallery, sawn siding, c.1930.</td></tr>
+<tr><td class="l">46. </td><td class="l">Other </td><td class="l">Camel-back house, no porch, milled, 1926, Marvin Spanier.</td></tr>
+<tr><td class="l">47. </td><td class="l">Outbldg. </td><td class="l">Single crib storage, round log, saddle notches, 1930, Spanier fam.</td></tr>
+<tr><td class="l">48. </td><td class="l">Bungalow </td><td class="l">Attached gallery, asbestos, 1930.</td></tr>
+<tr><td class="l">49. </td><td class="l">Outbldg. </td><td class="l">Single crib storage, half log, semi-lunate notch, c.1915, Golson fam.</td></tr>
+<tr><td class="l">50. </td><td class="l">Shotgun </td><td class="l">Shotgun, integral gallery, asbestos, c.1930.</td></tr>
+<tr><td class="l">51. </td><td class="l">Outbldg. </td><td class="l">Storage, vert. sawn, c.1930, George Hamilton.</td></tr>
+<tr><td class="l">52. </td><td class="l">Bungalow </td><td class="l">Integral half porch, asbestos, c.1930, Pat Tinsley.</td></tr>
+<tr><td class="l">53. </td><td class="l">Bungalow </td><td class="l">Attached porch, milled, 1933, John Mayes.</td></tr>
+<tr><td class="l">54. </td><td class="l">Other </td><td class="l">Two story Masonic Lodge&mdash;rare, integral gallery, sawn, c.1885.</td></tr>
+<tr><td class="l">55. </td><td class="l">Central hall </td><td class="l">Integral gallery, sawn siding, 1898, Golson fam.</td></tr>
+<tr><td class="l">56. </td><td class="l">Bungalow </td><td class="l">Integral porch, vert. bd./batten, 1933, James Young.</td></tr>
+<tr><td class="l">57. </td><td class="l">Other </td><td class="l">Latter Day Saints Church, attached portico, milled, 1910.</td></tr>
+<tr><td class="l">58. </td><td class="l">Bungalow </td><td class="l">Attached gallery, milled, c.1930.</td></tr>
+<tr><td class="l">59. </td><td class="l">Other </td><td class="l">Gen. store, attached porch, milled, 1927, Antley family.</td></tr>
+<tr><td class="l">60. </td><td class="l">Outbldg. </td><td class="l">Double crib, sawn, 1930.</td></tr>
+<tr><td class="l">61. </td><td class="l">Other </td><td class="l">Antioch Church, portico, steeple, asbestos, 1910.</td></tr>
+<tr><td class="l">62. </td><td class="l">Bungalow </td><td class="l">Integral gallery, milled, 1932, Fowler fam.</td></tr>
+<tr><td class="l">63. </td><td class="l">Other </td><td class="l">Frantom Chapel, asbestos, 1916.</td></tr>
+<tr><td class="l">64. </td><td class="l">Outbldg. </td><td class="l">Storage pen, sawn, c.1930, Burkett fam.</td></tr>
+<tr><td class="l">65. </td><td class="l">Central hall </td><td class="l">Attached gallery, milled, c.1920.</td></tr>
+<tr><td class="l">66. </td><td class="l">Two room </td><td class="l">Attached porch, milled, 1918.</td></tr>
+<tr><td class="l">67. </td><td class="l">Two room </td><td class="l">Attached gallery, sawn, vert. bd./batten, 1905, Lovelady fam.</td></tr>
+<tr><td class="l">68. </td><td class="l">Bungalow </td><td class="l">Attached porch, vert. siding, c.1930.</td></tr>
+<tr><td class="l">69. </td><td class="l">Other </td><td class="l">Lapine Methodist Church, milled, c.1915</td></tr>
+<tr><td class="l">70. </td><td class="l">Shotgun </td><td class="l">Shotgun, integral gallery, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">71. </td><td class="l">Central hall </td><td class="l">Integral gallery, vert. bd./batten, 1897.</td></tr>
+<tr><td class="l">72. </td><td class="l">Two room </td><td class="l">Original single pen half log w/semi-lunate notch, att. gallery 1895, C. C. George.</td></tr>
+<tr><td class="l">73. </td><td class="l">Outbldg. </td><td class="l">Tranverse crib barn, square logs, square notch, sawn siding, c.1900, Griffin fam.</td></tr>
+<tr><td class="l">74. </td><td class="l">Central hall </td><td class="l">Attached gallery, vert. bd./batten siding, 1893, Griffin fam.</td></tr>
+<tr><td class="l">75. </td><td class="l">Central hall </td><td class="l">Attached gallery, Masonite, c.1880, James Henry.</td></tr>
+<tr><td class="l">76. </td><td class="l">Outbldg. </td><td class="l">Single crib storage, round log, saddle notch, c.1920.</td></tr>
+<tr><td class="l">77. </td><td class="l">Two room </td><td class="l">Attached porch, vert. bd./batten, c.1880, John Bush.</td></tr>
+<tr><td class="l">78. </td><td class="l">Single pen </td><td class="l">Side addition, half round logs, semi-lunate notch, integral gallery, c.1890.</td></tr>
+<tr><td class="l">79. </td><td class="l">Two room </td><td class="l">Attached gallery, milled siding, c.1910.</td></tr>
+<tr><td class="l">80. </td><td class="l">Bungalow </td><td class="l">Half porch integral, milled, c.1920.</td></tr>
+<tr><td class="l">81. </td><td class="l">Saddlebag </td><td class="l">Attached gallery, vert. bd./batten, c.1880.</td></tr>
+<tr><td class="l">82. </td><td class="l">Saddlebag </td><td class="l">Attached gallery, vert. bd./batten, c.1880.</td></tr>
+<tr><td class="l">83. </td><td class="l">Bungalow </td><td class="l">Attached gallery, vert. bd./batten, 1927, Amos Hollingsworth.</td></tr>
+<tr><td class="l">84. </td><td class="l">Outbldg. </td><td class="l">Half log storage pen, semi-lunate notch, c.1910.</td></tr>
+<tr><td class="l">85. </td><td class="l">Other </td><td class="l">Triple room integral gallery, asphalt, c.1890.</td></tr>
+<tr><td class="l">86. </td><td class="l">Shotgun </td><td class="l">Shotgun, integral gallery, milled, c.1930, Connie Dowdy.</td></tr>
+<tr><td class="l">87. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, c.1910.</td></tr>
+<tr><td class="l">88. </td><td class="l">Two room </td><td class="l">Original single pen w/additions, half log w/semi-lunate notch, add. vert. bd./batten, c.1880, Baugh fam.</td></tr>
+<tr><td class="l">89. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, c.1900.</td></tr>
+<tr><td class="l">90. </td><td class="l">Central hall </td><td class="l">Integral gallery, asbestos siding, c.1915, Thomas T. Jones.</td></tr>
+<tr><td class="l">91. </td><td class="l">Bungalow </td><td class="l">Attached gallery, vert. bd./batten siding, c.1930.</td></tr>
+<tr class="th"><th colspan="3">EAST OF THE OUACHITA</th></tr>
+<tr><td class="l">92. </td><td class="l">Two room </td><td class="l">Attached porch, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">93. </td><td class="l">Other </td><td class="l">Two story &ldquo;Carolina I,&rdquo; &ldquo;Grecian Bend&rdquo; plantation house, sawn siding, built 1866 by the Guthrie family.</td></tr>
+<tr><td class="l">94. </td><td class="l">Two room </td><td class="l">Attached gallery, milled, c.1927.</td></tr>
+<tr><td class="l">95. </td><td class="l">Bungalow </td><td class="l">Attached gallery, milled, c.1920.</td></tr>
+<tr><td class="l">96. </td><td class="l">Bungalow </td><td class="l">&ldquo;California,&rdquo; integral gallery, milled, c.1930.</td></tr>
+<tr><td class="l">97. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled siding, c.1930.</td></tr>
+<tr><td class="l">98. </td><td class="l">Other </td><td class="l">Church, portico, belfry, milled siding, c.1930.</td></tr>
+<tr><td class="l">99. </td><td class="l">Outbldg. </td><td class="l">Double crib barn, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">100. </td><td class="l">Central hall </td><td class="l">&ldquo;Greek Revival&rdquo; plantation house integral gallery, milled siding, c.1880.</td></tr>
+<tr><td class="l">101. </td><td class="l">One room </td><td class="l">Attached porch, additions, vert. bd./batten siding, c.1900.</td></tr>
+<tr><td class="l">102. </td><td class="l">Central hall </td><td class="l">&ldquo;O&rsquo;Kelly House,&rdquo; moved from N. 6th and Washington, Monroe; sawn siding, integral gallery, dormers added, c.1860.</td></tr>
+<tr><td class="l">103. </td><td class="l">One room </td><td class="l">Vert. sawn siding, c.1920.</td></tr>
+<tr><td class="l">104. </td><td class="l">Shotgun </td><td class="l">Shotgun, attached porch, vert. bd./batten siding, c.1910.</td></tr>
+<tr><td class="l">105. </td><td class="l">Two room </td><td class="l">Attached gallery, vert. bd/batten, c.1920.</td></tr>
+<tr><td class="l">106. </td><td class="l">Other </td><td class="l">&ldquo;Little Bell Missionary Baptist Church,&rdquo; milled, c.1920.</td></tr>
+<tr><td class="l">107. </td><td class="l">Other </td><td class="l">Triple room, integral porch, horiz. and vert. siding, c.1910.</td></tr>
+<tr><td class="l">108. </td><td class="l">Bungalow </td><td class="l">Attached gallery, milled, c.1920.</td></tr>
+<tr><td class="l">109. </td><td class="l">Outbldg. </td><td class="l">Single crib storage, shed additions, c.1937.</td></tr>
+<tr><td class="l">110. </td><td class="l">Central Hall </td><td class="l">Attached gallery, milled, c.1920.</td></tr>
+<tr><td class="l">111. </td><td class="l">Two room </td><td class="l">Attached gallery, asbestos, c.1930.</td></tr>
+<tr><td class="l">112. </td><td class="l">Outbldg. </td><td class="l">Double crib barn, vert. sawn, c.1930.</td></tr>
+<tr><td class="l">113. </td><td class="l">Bungalow </td><td class="l">Integral gallery, milled, c.1930.</td></tr>
+<tr><td class="l">114. </td><td class="l">Two room </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr class="pbtr"><td colspan="3">
+<span class="pb" id="Page_36">36</span>
+</td></tr>
+<tr><td class="l">115. </td><td class="l">One room </td><td class="l">Integral gallery, vert. bd./batten, c.1920.</td></tr>
+<tr><td class="l">116. </td><td class="l">Two room </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">117. </td><td class="l">Central hall </td><td class="l">Log room enclosed, integral gallery, sawn siding, original 1850 by Howard family, now Stubbs plantation house.</td></tr>
+<tr><td class="l">118. </td><td class="l">Two room </td><td class="l">Integral gallery, vert. bd./batten siding, c.1910, on Stubbs plantation.</td></tr>
+<tr><td class="l">119. </td><td class="l">Two room </td><td class="l">Attached gallery, sawn siding, c.1920, on Stubbs plantation.</td></tr>
+<tr><td class="l">120. </td><td class="l">Two room </td><td class="l">Integral gallery, vert. bd./batten, c.1910, on Stubbs plantation.</td></tr>
+<tr><td class="l">121. </td><td class="l">Bungalow </td><td class="l">&ldquo;California Bungalow,&rdquo; milled, c.1920, on Stubbs plantation.</td></tr>
+<tr><td class="l">122. </td><td class="l">Central hall </td><td class="l">&ldquo;Greek Revival,&rdquo; integral gallery, milled siding, &ldquo;Cox House.&rdquo; 1882.</td></tr>
+<tr><td class="l">123. </td><td class="l">Bungalow </td><td class="l">Attached gallery, milled, c.1933, Henry Cyers.</td></tr>
+<tr><td class="l">124. </td><td class="l">Bungalow </td><td class="l">Integral gallery asbestos, c.1920.</td></tr>
+<tr><td class="l">125. </td><td class="l">Shotgun </td><td class="l">Two shotguns, attached and integral porches, milled, c.1920.</td></tr>
+<tr><td class="l">126. </td><td class="l">Other </td><td class="l">Two story, four room over four room, attached porch, milled, c.1927, various other buildings, water tanks.</td></tr>
+<tr><td class="l">127. </td><td class="l">Central hall </td><td class="l">&ldquo;Whitehall Plantation&rdquo; house, Greek Revival, sawn siding, integral gallery, dormers, fine millwork, 1858. National Register.</td></tr>
+<tr><td class="l">128. </td><td class="l">Outbldg. </td><td class="l">Single crib, square log half dovetail notch, c.1900.</td></tr>
+<tr><td class="l">129. </td><td class="l">Two room </td><td class="l">Integral gallery, asbestos, c.1910, on &ldquo;OZO,&rdquo; McHenry Plantation, McClain and McDonald families.</td></tr>
+<tr><td class="l">130. </td><td class="l">Central hall </td><td class="l">1&frac12; story, various additions to 1838, &ldquo;Refugio&rdquo; plantation house. McClain and McDonald families.</td></tr>
+<tr><td class="l">131. </td><td class="l">Central hall </td><td class="l">Integral gallery, asbestos, c.1830-50, Garrett family.</td></tr>
+<tr><td class="l">132. </td><td class="l">Shotgun </td><td class="l">Shotgun, attached porch, asphalt, c.1930.</td></tr>
+<tr><td class="l">133. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled and asphalt siding, c.1880, Faulk family.</td></tr>
+<tr><td class="l">134. </td><td class="l">Other </td><td class="l">&ldquo;Greek Revival,&rdquo; portico gallery, additions, milled and sawn siding, built 1838 by Jean Baptiste Filhoil, grandson of Don Juan Filhoil. &ldquo;Logtown&rdquo; plantation house. Nat. Reg.</td></tr>
+<tr><td class="l">135. </td><td class="l">Shotgun </td><td class="l">Attached gallery, milled, c.1930.</td></tr>
+<tr><td class="l">136. </td><td class="l">Shotgun </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">137. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, c.1900.</td></tr>
+<tr><td class="l">138. </td><td class="l">Central hall </td><td class="l">&ldquo;Boscobel,&rdquo; integral gallery, sawn, Greek Revival, built c.1820. By Judge Henry Bry. Nat. Reg.</td></tr>
+<tr><td class="l">139. </td><td class="l">Central hall </td><td class="l">1&frac12; story, integral gallery, milled, c.1900.</td></tr>
+<tr><td class="l">140. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled, c.1920.</td></tr>
+<tr><td class="l">141. </td><td class="l">Outbldg. </td><td class="l">Transverse crib barn, vert. planks, c.1930.</td></tr>
+<tr><td class="l">142. </td><td class="l">Central hall </td><td class="l">Integral gallery, milled siding, c.1920.</td></tr>
+<tr><td class="l">143. </td><td class="l">Two room </td><td class="l">Like a bungalow plan, half porch attached, milled c.1930.</td></tr>
+<tr class="th"><th colspan="3">MONROE AND WEST MONROE</th></tr>
+<tr><td class="l">143a. </td><td class="l">Central hall </td><td class="l">&ldquo;Lower Pargoud overseer&rsquo;s house,&rdquo; integral gallery, sawn, built c.1835. Nat. Reg.</td></tr>
+<tr><td class="l">144. </td><td class="l">Other </td><td class="l">&ldquo;Layton Castle,&rdquo; renovated as &ldquo;Chateau&rdquo; in 1910&rsquo;s, original raised Louisiana plantation house incorporated in house. Begun by Judge Henry Bry, c.1820&rsquo;s. Nat. Reg.</td></tr>
+<tr><td class="l">145. </td><td class="l">Other </td><td class="l">&ldquo;Queen Anne&rdquo; gable front and wing, porches, milled, c.1890&rsquo;s.</td></tr>
+<tr><td class="l">146. </td><td class="l">Other </td><td class="l">&ldquo;Queen Anne&rdquo; gable front and wing, porches, milled, c.1890&rsquo;s.</td></tr>
+<tr><td class="l">147. </td><td class="l">Other </td><td class="l">Two story, porches, milled siding, built 1905 by Ernest L. Neville.</td></tr>
+<tr><td class="l">148. </td><td class="l">Central hall </td><td class="l">Raised, integral galleries, milled, J. H. Trousdale, Sr., 1914.</td></tr>
+<tr><td class="l">149. </td><td class="l">Central hall </td><td class="l">Two story, portico, milled, Weaks family, c.1900&rsquo;s.</td></tr>
+<tr><td class="l">150. </td><td class="l">Central hall </td><td class="l">Two story, portico, milled, Gov. Luther Hall, 1906. Nat. Reg.</td></tr>
+<tr><td class="l">151. </td><td class="l">Central hall </td><td class="l">Two story, portico, brick, Travis Oliver I, c.1930&rsquo;s.</td></tr>
+<tr><td class="l">152. </td><td class="l">Other </td><td class="l">Two story Tudor Revival, built 1920 by Elmer Slagle, Sr. Nat. Reg.</td></tr>
+<tr><td class="l">153. </td><td class="l">Other </td><td class="l">Prairie style house designed by William Burley Griffin, 1926. Nat. Reg.</td></tr>
+<tr><td class="l">154. </td><td class="l">Bungalow </td><td class="l">&ldquo;California bungalow,&rdquo; shingle siding, c.1930.</td></tr>
+<tr><td class="l">155. </td><td class="l">Bungalow </td><td class="l">&ldquo;California bungalow,&rdquo; milled, c.1920.</td></tr>
+<tr><td class="l">156. </td><td class="l">Bungalow </td><td class="l">&ldquo;California bungalow,&rdquo; porches, c.1930.</td></tr>
+<tr><td class="l">157. </td><td class="l">Bungalow </td><td class="l">&ldquo;California bungalow,&rdquo; integral porches, milled, c.1920.</td></tr>
+<tr><td class="l">158. </td><td class="l">Bungalow </td><td class="l">&ldquo;California bungalow,&rdquo; integral gallery, milled, c.1926.</td></tr>
+<tr><td class="l">159. </td><td class="l">Church </td><td class="l">St. Matthew&rsquo;s Roman Catholic Church, Gothic Revival, brick, 1899.</td></tr>
+<tr><td class="l">160. </td><td class="l">Church </td><td class="l">Tabernacle Baptist Church, brick, c.1935.</td></tr>
+<tr><td class="l">161. </td><td class="l">School </td><td class="l">Ouachita Parish High School, Jacobean Revival, c.1926. Nat. Reg.</td></tr>
+<tr><td class="l">162. </td><td class="l">School </td><td class="l">Georgia Tucker Grammar School, Mediterranean, brick, 1919.</td></tr>
+<tr><td class="l">163. </td><td class="l">Office </td><td class="l">Isaiah Garrett Law Office, brick, 1840&rsquo;s. National Register</td></tr>
+<tr><td class="l">164. </td><td class="l">Commercial </td><td class="l">Two story brick store, 1890&rsquo;s.</td></tr>
+<tr><td class="l">165. </td><td class="l">Commercial </td><td class="l">Two story brick store, built 1908 by T. M. Parker.</td></tr>
+<tr><td class="l">166. </td><td class="l">Commercial </td><td class="l">Two story brick store, 1909.</td></tr>
+<tr><td class="l">167. </td><td class="l">Civic </td><td class="l">Ouachita Parish Courthouse, Neoclassical, 1925. Nat. Reg.</td></tr>
+<tr><td class="l">168. </td><td class="l">Commercial </td><td class="l">Frances Hotel, multi-story, Art Deco, built 1930 by Carl McHenry.</td></tr>
+<tr><td class="l">169. </td><td class="l">Other </td><td class="l">Queen Anne, Bright-Lamkin-Easterling house, National Register, 1890.</td></tr>
+</table>
+<h2 id="trnotes">Transcriber&rsquo;s Notes</h2>
+<ul>
+<li>Silently corrected a few typos.</li>
+<li>Retained publication information from the printed edition: this eBook is public-domain in the country of publication.</li>
+<li>In the text versions only, text in italics is delimited by _underscores_.</li>
+</ul>
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK THE ARCHITECTURE OF THE NORTH LOUISIANA RIVER PARISHES, VOLUME I: OUACHITA PARISH ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away--you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin:0.83em 0; font-size:1.1em; text-align:center'>START: FULL LICENSE<br />
+<span style='font-size:smaller'>THE FULL PROJECT GUTENBERG LICENSE<br />
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</span>
+</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &bull; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &bull; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &bull; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &bull; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
